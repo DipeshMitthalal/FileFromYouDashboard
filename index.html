@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FilesFromYou Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+       
+    </head>
+    <body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="wrapper">
+        <header>
+            <div class="container clearfix">
+                <h1>FilesFromYou Dashboard</h1>
+            </div>
+        </header>
+        <div class="container clearfix">
+            <div class="third widget doughnut">
+                <h3>List of clients and their CPU usage</h3>
+                <p><a href="" class="button">Ordered By CPU Usage</a></p> 
+
+                <div class="canvas-container">
+
+                    <div data-role="content">
+                        <table id="tableUsage" cellpadding="2px" cellspacing="2px" >
+                            <tbody>
+                                <tr>
+                                    <th>Cient ID</th>
+                                    <th>Link to Client</th>
+                                    <th>CPU Usage</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="chart-legend">
+                </div>
+            </div>
+             <div class="third widget line">
+                    <div class="chart-legend">
+                        <h3>CPU Usage statistics for a week</h3>
+                        
+                        <p><a href="" class="button">Change Date Range</a><a href="" class="button">Filter by Location</a></p>
+                    </div>
+                    <div class="canvas-container">
+                        <canvas id="shipments"></canvas>
+                    </div>
+                </div>
+                <div class="third widget">
+                    <div class="chart-legend">
+                        <h3>CPU Usage of all clients</h3>
+                       
+                        <p><a href="" class="button">Track another application</a></p>
+                    </div>
+                    <div class="canvas-container">
+                        <canvas id="departments"></canvas>
+                    </div>
+                </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    <footer>
+        <div class="container">
+            &copy; 2014 FilesFromYou &mdash; <a href="">Contact support</a>
+        </div>
+    </footer>
+
+
+    <script src="js/Chart.js"></script>      
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    </body>
+</html>

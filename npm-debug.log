@@ -1,0 +1,2717 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/bitnami/nodejs/bin/.node.bin',
+1 verbose cli   '/opt/bitnami/nodejs/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ember' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.31
+4 verbose cache add [ 'ember', null ]
+5 verbose cache add name=undefined spec="ember" args=["ember",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'ember',
+6 verbose parsed url   path: 'ember',
+6 verbose parsed url   href: 'ember' }
+7 silly lockFile 64a8bf88-ember ember
+8 verbose lock ember /home/bitnami/.npm/64a8bf88-ember.lock
+9 silly lockFile 64a8bf88-ember ember
+10 silly lockFile 64a8bf88-ember ember
+11 verbose addNamed [ 'ember', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile d9dc6648-ember ember@
+14 verbose lock ember@ /home/bitnami/.npm/d9dc6648-ember.lock
+15 silly addNameRange { name: 'ember', range: '*', hasData: false }
+16 verbose request where is /ember
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id a3cded476d3f4b23
+19 verbose url raw /ember
+20 verbose url resolving [ 'https://registry.npmjs.org/', './ember' ]
+21 verbose url resolved https://registry.npmjs.org/ember
+22 verbose request where is https://registry.npmjs.org/ember
+23 info trying registry request attempt 1 at 13:37:49
+24 http GET https://registry.npmjs.org/ember
+25 http 200 https://registry.npmjs.org/ember
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:49 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"3CFT7ET5799TA13CZRQQLYNR1"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '17248',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-lcy1132-LCY',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1414935468.930902,VS0,VE430',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'ember', range: '*', hasData: true }
+28 silly addNameRange versions [ 'ember',
+28 silly addNameRange   [ '0.9.7-1',
+28 silly addNameRange     '0.9.8',
+28 silly addNameRange     '0.9.8-1',
+28 silly addNameRange     '1.0.0-pre',
+28 silly addNameRange     '1.0.0-pre.m1',
+28 silly addNameRange     '1.0.0-pre.m2',
+28 silly addNameRange     '1.0.0-pre.2' ] ]
+29 verbose addNamed [ 'ember', '1.0.0-pre.2' ]
+30 verbose addNamed [ '1.0.0-pre.2', '1.0.0-pre.2' ]
+31 silly lockFile c4b70bdb-ember-1-0-0-pre-2 ember@1.0.0-pre.2
+32 verbose lock ember@1.0.0-pre.2 /home/bitnami/.npm/c4b70bdb-ember-1-0-0-pre-2.lock
+33 silly lockFile bf4a6f2f--org-ember-ember-1-0-0-pre-2-tgz https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+34 verbose lock https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz /home/bitnami/.npm/bf4a6f2f--org-ember-ember-1-0-0-pre-2-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz',
+35 verbose addRemoteTarball   '21e5db63119ddcc4648d5baf05548fb13d592547' ]
+36 info retry fetch attempt 1 at 13:37:49
+37 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+38 http GET https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+39 http 200 https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+40 silly lockFile bf4a6f2f--org-ember-ember-1-0-0-pre-2-tgz https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+41 silly lockFile bf4a6f2f--org-ember-ember-1-0-0-pre-2-tgz https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz
+42 silly lockFile c4b70bdb-ember-1-0-0-pre-2 ember@1.0.0-pre.2
+43 silly lockFile c4b70bdb-ember-1-0-0-pre-2 ember@1.0.0-pre.2
+44 silly lockFile d9dc6648-ember ember@
+45 silly lockFile d9dc6648-ember ember@
+46 silly resolved [ { name: 'ember',
+46 silly resolved     summary: 'Ember - JavaScript Application Framework',
+46 silly resolved     description: 'Ember - JavaScript Application Framework',
+46 silly resolved     homepage: 'http://github.com/emberjs/ember.js',
+46 silly resolved     author: { name: 'Charles Jolley' },
+46 silly resolved     version: '1.0.0-pre.2',
+46 silly resolved     dependencies:
+46 silly resolved      { handlebars: '~> 1.0.0-beta.6',
+46 silly resolved        window: 'git://github.com/charlesjolley/node-window.git#master',
+46 silly resolved        jquery: '~> 1.7.0',
+46 silly resolved        convoy: '~0.3' },
+46 silly resolved     main: './ember.js',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/charlesjolley/node-ember.git' },
+46 silly resolved     readme: '# Ember for Node\n\nEmber.js is a framework for building ambitious client-side applications on the\nweb. Now you can use the same Ember tools in node code and in node-based asset\npipelines like [Convoy](http://github.com/charlesjolley/convoy).\n\n# Using This Package\n\nJust add ember as a requirement to your package.json:\n\n```javascript\n"dependencies": {\n  ...\n  "ember": "~0.9"\n}\n```\n\nIn your code, you can load the entire Ember stack by just requiring the package.\nThis will add Ember to the global namespace in your application.\n\n```javascript\nrequire(\'ember\');\n\nMyApp = Ember.Application.create({\n  hi: function() { console.log(\'Hi! I\'m an app!\'); }\n});\n```\n\nIf you don\'t want to use the entire Ember stack, you can just require the \nspecific module that you want. For example, a lot of server side code just \nneeds States for statecharting:\n\n```javascript\nrequire(\'ember/states\');\n\nMyState = Ember.State.create({\n  \n});\n```\n\n# Using Ember with Convoy\n\nBuilding an Ember application in the browser is very easy when using Convoy.\nJust require ember in your main application file.\n\n```javascript\n// In some JS module included by convoy:\nrequire(\'ember\'); // <- convoy will automatically pull in all of Ember.\n\nUserView = Ember.View.extend({\n  template: Ember.Handlebars.compile(\'{{firstName}} {{lastName}}\')\n});\n```\n\nIf you want to store your Handlebars templates in a separate file, Ember for\nNode has a HandlebarsCompiler that will precompile the templates for you. \nHere is an example Convoy pipeline configuration:\n\n```javascript\npipeline = convoy({\n  \'app.js\': {\n    packager: \'javascript\',\n    compilers: {\n      \'.hbr\': require(\'ember/packager\').HandlebarsCompiler\n    }\n  }\n});\n\napp = express.createServer();\napp.use(pipeline.middleware());\n```\n\nThis will now make `.hbr` files available as modules. In your app code, you\ncan load the template via a normal require:\n\n```javascript\n// user_view.js\n\nrequire(\'ember/views\');\n\nUserView = Ember.View.extend({\n  template: require(\'./user_template\') // template in user_template.hbr\n});\n```\n\nFor a fully functioning example of an application, check out the \n[examples](https://github.com/charlesjolley/node-ember/tree/master/examples) \nfolder.\n\n# Building From Source\n\nThis project checks out the ember source and builds compiled copies for use in the released version. If you want to rebuild this from source, here is what you need to do:\n\n1.  Make sure you have [node.js](http://nodejs.org) and Jake installed globally. Once\n    you have node.js installed you can install jake with the command\n    `[sudo] npm install -g jake` \n2.  Also make sure you have Ruby 1.9.3 or later installed as well as bundler. Once\n    you have ruby installed you can install bundler with `[sudo] gem install bundler`\n3.  Clone [the node-ember repo](http://github.com/charlesjolley/node-ember)\n4.  From the repo directory run `jake vendor:setup`. This should checkout the correct \n    versions of ember and ember-data and set them up to build\n5.  Run `jake diet` to actually build the assets.\n\nNote that you only need to run `vendor:setup` once the first time you install the report or anytime the version of ember or ember-data changes. Afterwards, you should be able to run `dist` just to rebuild.\n\nember and ember-data are linked into this project as git submodules. To update to a newer (or older) version of ember or ember-data, cd into the vendor directory and checkout the version you want. Then cd back to the top level of the repo and commit the updates into git. Once completed, run `jake vendor:setup` again to update the contents.\n\n**IMPORTANT:** The dist command will checkout whichever version of ember or ember-data are set in the submodule, so you must commit to git before rebuilding.\n\n\n\n',
+46 silly resolved     _id: 'ember@1.0.0-pre.2',
+46 silly resolved     dist:
+46 silly resolved      { shasum: '21e5db63119ddcc4648d5baf05548fb13d592547',
+46 silly resolved        tarball: 'http://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz' },
+46 silly resolved     _npmVersion: '1.1.59',
+46 silly resolved     _npmUser: { name: 'charlesjolley', email: 'charles@sproutcore.com' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: '21e5db63119ddcc4648d5baf05548fb13d592547',
+46 silly resolved     _from: 'ember@',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/ember/-/ember-1.0.0-pre.2.tgz' } ]
+47 info install ember@1.0.0-pre.2 into /home/bitnami/chartjs_dashboard
+48 info installOne ember@1.0.0-pre.2
+49 verbose node_modules/ember unbuild
+50 verbose tar unpack /home/bitnami/.npm/ember/1.0.0-pre.2/package.tgz
+51 silly lockFile 6eedb33d-tjs-dashboard-node-modules-ember tar:///home/bitnami/chartjs_dashboard/node_modules/ember
+52 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember /home/bitnami/.npm/6eedb33d-tjs-dashboard-node-modules-ember.lock
+53 silly lockFile 54012818-pm-ember-1-0-0-pre-2-package-tgz tar:///home/bitnami/.npm/ember/1.0.0-pre.2/package.tgz
+54 verbose lock tar:///home/bitnami/.npm/ember/1.0.0-pre.2/package.tgz /home/bitnami/.npm/54012818-pm-ember-1-0-0-pre-2-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+58 silly gunzTarPerm extractEntry .npmignore
+59 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+62 silly gunzTarPerm extractEntry views.js
+63 silly gunzTarPerm modified mode [ 'views.js', 438, 420 ]
+64 silly gunzTarPerm extractEntry ember.js
+65 silly gunzTarPerm modified mode [ 'ember.js', 438, 420 ]
+66 silly gunzTarPerm extractEntry states.js
+67 silly gunzTarPerm modified mode [ 'states.js', 438, 420 ]
+68 silly gunzTarPerm extractEntry handlebars.js
+69 silly gunzTarPerm modified mode [ 'handlebars.js', 438, 420 ]
+70 silly gunzTarPerm extractEntry debug.js
+71 silly gunzTarPerm modified mode [ 'debug.js', 438, 420 ]
+72 silly gunzTarPerm extractEntry packager.js
+73 silly gunzTarPerm modified mode [ 'packager.js', 438, 420 ]
+74 silly gunzTarPerm extractEntry routing.js
+75 silly gunzTarPerm modified mode [ 'routing.js', 438, 420 ]
+76 silly gunzTarPerm extractEntry data.js
+77 silly gunzTarPerm modified mode [ 'data.js', 438, 420 ]
+78 silly gunzTarPerm extractEntry rsvp.js
+79 silly gunzTarPerm modified mode [ 'rsvp.js', 438, 420 ]
+80 silly gunzTarPerm extractEntry application.js
+81 silly gunzTarPerm modified mode [ 'application.js', 438, 420 ]
+82 silly gunzTarPerm extractEntry runtime.js
+83 silly gunzTarPerm modified mode [ 'runtime.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry metal.js
+85 silly gunzTarPerm modified mode [ 'metal.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry metamorph.js
+87 silly gunzTarPerm modified mode [ 'metamorph.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry examples/contacts/package.json
+89 silly gunzTarPerm modified mode [ 'examples/contacts/package.json', 438, 420 ]
+90 silly gunzTarPerm extractEntry examples/contacts/README.md
+91 silly gunzTarPerm modified mode [ 'examples/contacts/README.md', 438, 420 ]
+92 silly gunzTarPerm extractEntry examples/contacts/server.js
+93 silly gunzTarPerm modified mode [ 'examples/contacts/server.js', 438, 420 ]
+94 silly gunzTarPerm extractEntry examples/contacts/app/core.js
+95 silly gunzTarPerm modified mode [ 'examples/contacts/app/core.js', 438, 420 ]
+96 silly gunzTarPerm extractEntry examples/contacts/app/main.js
+97 silly gunzTarPerm modified mode [ 'examples/contacts/app/main.js', 438, 420 ]
+98 silly gunzTarPerm extractEntry examples/contacts/app/user_view.js
+99 silly gunzTarPerm modified mode [ 'examples/contacts/app/user_view.js', 438, 420 ]
+100 silly gunzTarPerm extractEntry examples/contacts/app/index.html
+101 silly gunzTarPerm modified mode [ 'examples/contacts/app/index.html', 438, 420 ]
+102 silly gunzTarPerm extractEntry examples/contacts/app/main.css
+103 silly gunzTarPerm modified mode [ 'examples/contacts/app/main.css', 438, 420 ]
+104 silly gunzTarPerm extractEntry examples/contacts/app/user_template.hbr
+105 silly gunzTarPerm modified mode [ 'examples/contacts/app/user_template.hbr', 438, 420 ]
+106 silly gunzTarPerm extractEntry .gitmodules
+107 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+108 silly lockFile 6eedb33d-tjs-dashboard-node-modules-ember tar:///home/bitnami/chartjs_dashboard/node_modules/ember
+109 silly lockFile 6eedb33d-tjs-dashboard-node-modules-ember tar:///home/bitnami/chartjs_dashboard/node_modules/ember
+110 silly lockFile 54012818-pm-ember-1-0-0-pre-2-package-tgz tar:///home/bitnami/.npm/ember/1.0.0-pre.2/package.tgz
+111 silly lockFile 54012818-pm-ember-1-0-0-pre-2-package-tgz tar:///home/bitnami/.npm/ember/1.0.0-pre.2/package.tgz
+112 info preinstall ember@1.0.0-pre.2
+113 verbose readDependencies using package.json deps
+114 verbose readDependencies using package.json deps
+115 verbose cache add [ 'handlebars@~> 1.0.0-beta.6', null ]
+116 verbose cache add name=undefined spec="handlebars@~> 1.0.0-beta.6" args=["handlebars@~> 1.0.0-beta.6",null]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: 'handlebars@~%3E%201.0.0-beta.6',
+117 verbose parsed url   path: 'handlebars@~%3E%201.0.0-beta.6',
+117 verbose parsed url   href: 'handlebars@~%3E%201.0.0-beta.6' }
+118 verbose cache add [ 'window@git://github.com/charlesjolley/node-window.git#master',
+118 verbose cache add   null ]
+119 verbose cache add name=undefined spec="window@git://github.com/charlesjolley/node-window.git#master" args=["window@git://github.com/charlesjolley/node-window.git#master",null]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: '#master',
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: 'window@git://github.com/charlesjolley/node-window.git',
+120 verbose parsed url   path: 'window@git://github.com/charlesjolley/node-window.git',
+120 verbose parsed url   href: 'window@git://github.com/charlesjolley/node-window.git#master' }
+121 verbose cache add name="handlebars" spec="~> 1.0.0-beta.6" args=["handlebars","~> 1.0.0-beta.6"]
+122 verbose parsed url { protocol: null,
+122 verbose parsed url   slashes: null,
+122 verbose parsed url   auth: null,
+122 verbose parsed url   host: null,
+122 verbose parsed url   port: null,
+122 verbose parsed url   hostname: null,
+122 verbose parsed url   hash: null,
+122 verbose parsed url   search: null,
+122 verbose parsed url   query: null,
+122 verbose parsed url   pathname: '~%3E%201.0.0-beta.6',
+122 verbose parsed url   path: '~%3E%201.0.0-beta.6',
+122 verbose parsed url   href: '~%3E%201.0.0-beta.6' }
+123 verbose addNamed [ 'handlebars', '~> 1.0.0-beta.6' ]
+124 verbose addNamed [ null, '>=1.0.0-beta.6 <1.1.0-0' ]
+125 silly lockFile 10a3679e-handlebars-1-0-0-beta-6 handlebars@~> 1.0.0-beta.6
+126 verbose lock handlebars@~> 1.0.0-beta.6 /home/bitnami/.npm/10a3679e-handlebars-1-0-0-beta-6.lock
+127 verbose cache add name="window" spec="git://github.com/charlesjolley/node-window.git#master" args=["window","git://github.com/charlesjolley/node-window.git#master"]
+128 verbose parsed url { protocol: 'git:',
+128 verbose parsed url   slashes: true,
+128 verbose parsed url   auth: null,
+128 verbose parsed url   host: 'github.com',
+128 verbose parsed url   port: null,
+128 verbose parsed url   hostname: 'github.com',
+128 verbose parsed url   hash: '#master',
+128 verbose parsed url   search: null,
+128 verbose parsed url   query: null,
+128 verbose parsed url   pathname: '/charlesjolley/node-window.git',
+128 verbose parsed url   path: '/charlesjolley/node-window.git',
+128 verbose parsed url   href: 'git://github.com/charlesjolley/node-window.git#master' }
+129 silly lockFile b5907bad-om-charlesjolley-node-window-git git://github.com/charlesjolley/node-window.git
+130 verbose lock git://github.com/charlesjolley/node-window.git /home/bitnami/.npm/b5907bad-om-charlesjolley-node-window-git.lock
+131 verbose cache add [ 'jquery@~> 1.7.0', null ]
+132 verbose cache add name=undefined spec="jquery@~> 1.7.0" args=["jquery@~> 1.7.0",null]
+133 verbose parsed url { protocol: null,
+133 verbose parsed url   slashes: null,
+133 verbose parsed url   auth: null,
+133 verbose parsed url   host: null,
+133 verbose parsed url   port: null,
+133 verbose parsed url   hostname: null,
+133 verbose parsed url   hash: null,
+133 verbose parsed url   search: null,
+133 verbose parsed url   query: null,
+133 verbose parsed url   pathname: 'jquery@~%3E%201.7.0',
+133 verbose parsed url   path: 'jquery@~%3E%201.7.0',
+133 verbose parsed url   href: 'jquery@~%3E%201.7.0' }
+134 verbose cache add [ 'convoy@~0.3', null ]
+135 verbose cache add name=undefined spec="convoy@~0.3" args=["convoy@~0.3",null]
+136 verbose parsed url { protocol: null,
+136 verbose parsed url   slashes: null,
+136 verbose parsed url   auth: null,
+136 verbose parsed url   host: null,
+136 verbose parsed url   port: null,
+136 verbose parsed url   hostname: null,
+136 verbose parsed url   hash: null,
+136 verbose parsed url   search: null,
+136 verbose parsed url   query: null,
+136 verbose parsed url   pathname: 'convoy@~0.3',
+136 verbose parsed url   path: 'convoy@~0.3',
+136 verbose parsed url   href: 'convoy@~0.3' }
+137 verbose cache add name="jquery" spec="~> 1.7.0" args=["jquery","~> 1.7.0"]
+138 verbose parsed url { protocol: null,
+138 verbose parsed url   slashes: null,
+138 verbose parsed url   auth: null,
+138 verbose parsed url   host: null,
+138 verbose parsed url   port: null,
+138 verbose parsed url   hostname: null,
+138 verbose parsed url   hash: null,
+138 verbose parsed url   search: null,
+138 verbose parsed url   query: null,
+138 verbose parsed url   pathname: '~%3E%201.7.0',
+138 verbose parsed url   path: '~%3E%201.7.0',
+138 verbose parsed url   href: '~%3E%201.7.0' }
+139 verbose addNamed [ 'jquery', '~> 1.7.0' ]
+140 verbose addNamed [ null, '>=1.7.0-0 <1.8.0-0' ]
+141 silly lockFile ac7afeeb-jquery-1-7-0 jquery@~> 1.7.0
+142 verbose lock jquery@~> 1.7.0 /home/bitnami/.npm/ac7afeeb-jquery-1-7-0.lock
+143 verbose cache add name="convoy" spec="~0.3" args=["convoy","~0.3"]
+144 verbose parsed url { protocol: null,
+144 verbose parsed url   slashes: null,
+144 verbose parsed url   auth: null,
+144 verbose parsed url   host: null,
+144 verbose parsed url   port: null,
+144 verbose parsed url   hostname: null,
+144 verbose parsed url   hash: null,
+144 verbose parsed url   search: null,
+144 verbose parsed url   query: null,
+144 verbose parsed url   pathname: '~0.3',
+144 verbose parsed url   path: '~0.3',
+144 verbose parsed url   href: '~0.3' }
+145 verbose addNamed [ 'convoy', '~0.3' ]
+146 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+147 silly lockFile 5e197d42-convoy-0-3 convoy@~0.3
+148 verbose lock convoy@~0.3 /home/bitnami/.npm/5e197d42-convoy-0-3.lock
+149 silly addNameRange { name: 'handlebars',
+149 silly addNameRange   range: '>=1.0.0-beta.6 <1.1.0-0',
+149 silly addNameRange   hasData: false }
+150 verbose addRemoteGit [ 'git://github.com/charlesjolley/node-window.git', 'master' ]
+151 verbose request where is /handlebars
+152 verbose request registry https://registry.npmjs.org/
+153 verbose url raw /handlebars
+154 verbose url resolving [ 'https://registry.npmjs.org/', './handlebars' ]
+155 verbose url resolved https://registry.npmjs.org/handlebars
+156 verbose request where is https://registry.npmjs.org/handlebars
+157 info trying registry request attempt 1 at 13:37:51
+158 http GET https://registry.npmjs.org/handlebars
+159 silly addNameRange { name: 'jquery', range: '>=1.7.0-0 <1.8.0-0', hasData: false }
+160 silly addNameRange { name: 'convoy', range: '>=0.3.0-0 <0.4.0-0', hasData: false }
+161 verbose request where is /convoy
+162 verbose request registry https://registry.npmjs.org/
+163 verbose url raw /convoy
+164 verbose url resolving [ 'https://registry.npmjs.org/', './convoy' ]
+165 verbose url resolved https://registry.npmjs.org/convoy
+166 verbose request where is https://registry.npmjs.org/convoy
+167 info trying registry request attempt 1 at 13:37:51
+168 http GET https://registry.npmjs.org/convoy
+169 verbose request where is /jquery
+170 verbose request registry https://registry.npmjs.org/
+171 verbose url raw /jquery
+172 verbose url resolving [ 'https://registry.npmjs.org/', './jquery' ]
+173 verbose url resolved https://registry.npmjs.org/jquery
+174 verbose request where is https://registry.npmjs.org/jquery
+175 info trying registry request attempt 1 at 13:37:51
+176 verbose etag "2KVM6XUXX0HJHFLJCP75C15FW"
+177 http GET https://registry.npmjs.org/jquery
+178 http 304 https://registry.npmjs.org/jquery
+179 silly registry.get cb [ 304,
+179 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:50 GMT',
+179 silly registry.get     server: 'Apache',
+179 silly registry.get     via: '1.1 varnish',
+179 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:50 GMT',
+179 silly registry.get     'cache-control': 'max-age=60',
+179 silly registry.get     etag: '"2KVM6XUXX0HJHFLJCP75C15FW"',
+179 silly registry.get     age: '48',
+179 silly registry.get     'x-served-by': 'cache-lcy1135-LCY',
+179 silly registry.get     'x-cache': 'HIT',
+179 silly registry.get     'x-cache-hits': '1',
+179 silly registry.get     'x-timer': 'S1414935470.886998,VS0,VE0',
+179 silly registry.get     vary: 'Accept',
+179 silly registry.get     'content-length': '0',
+179 silly registry.get     'keep-alive': 'timeout=10, max=50',
+179 silly registry.get     connection: 'Keep-Alive' } ]
+180 verbose etag https://registry.npmjs.org/jquery from cache
+181 silly addNameRange number 2 { name: 'jquery', range: '>=1.7.0-0 <1.8.0-0', hasData: true }
+182 silly addNameRange versions [ 'jquery',
+182 silly addNameRange   [ '1.5.1',
+182 silly addNameRange     '1.6.2',
+182 silly addNameRange     '1.6.3',
+182 silly addNameRange     '1.7.2',
+182 silly addNameRange     '1.7.3',
+182 silly addNameRange     '1.8.2',
+182 silly addNameRange     '1.8.3',
+182 silly addNameRange     '2.1.0-beta2',
+182 silly addNameRange     '2.1.0-beta3',
+182 silly addNameRange     '1.11.0-beta3',
+182 silly addNameRange     '1.11.0-rc1',
+182 silly addNameRange     '2.1.0-rc1',
+182 silly addNameRange     '1.11.0',
+182 silly addNameRange     '2.1.0',
+182 silly addNameRange     '2.1.1-beta1',
+182 silly addNameRange     '1.11.1-beta1',
+182 silly addNameRange     '2.1.1-rc1',
+182 silly addNameRange     '1.11.1-rc1',
+182 silly addNameRange     '2.1.1-rc2',
+182 silly addNameRange     '1.11.1-rc2',
+182 silly addNameRange     '2.1.1',
+182 silly addNameRange     '1.11.1',
+182 silly addNameRange     '1.9.1' ] ]
+183 verbose addNamed [ 'jquery', '1.7.3' ]
+184 verbose addNamed [ '1.7.3', '1.7.3' ]
+185 silly lockFile d7d4fb7a-jquery-1-7-3 jquery@1.7.3
+186 verbose lock jquery@1.7.3 /home/bitnami/.npm/d7d4fb7a-jquery-1-7-3.lock
+187 silly lockFile fd8dfbba-pmjs-org-jquery-jquery-1-7-3-tgz https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+188 verbose lock https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz /home/bitnami/.npm/fd8dfbba-pmjs-org-jquery-jquery-1-7-3-tgz.lock
+189 verbose addRemoteTarball [ 'https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz',
+189 verbose addRemoteTarball   'e3d00a71612ac7e9b554b438e0987d0272ddba94' ]
+190 info retry fetch attempt 1 at 13:37:51
+191 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+192 http GET https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+193 http 200 https://registry.npmjs.org/handlebars
+194 silly registry.get cb [ 200,
+194 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:50 GMT',
+194 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+194 silly registry.get     etag: '"31IPD5BTD511CFC8EXEKH13VO"',
+194 silly registry.get     'content-type': 'application/json',
+194 silly registry.get     'cache-control': 'max-age=60',
+194 silly registry.get     'content-length': '50262',
+194 silly registry.get     'accept-ranges': 'bytes',
+194 silly registry.get     via: '1.1 varnish',
+194 silly registry.get     age: '32',
+194 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+194 silly registry.get     'x-cache': 'HIT',
+194 silly registry.get     'x-cache-hits': '2',
+194 silly registry.get     'x-timer': 'S1414935470.877366,VS0,VE0',
+194 silly registry.get     vary: 'Accept',
+194 silly registry.get     'keep-alive': 'timeout=10, max=50',
+194 silly registry.get     connection: 'Keep-Alive' } ]
+195 silly addNameRange number 2 { name: 'handlebars',
+195 silly addNameRange   range: '>=1.0.0-beta.6 <1.1.0-0',
+195 silly addNameRange   hasData: true }
+196 silly addNameRange versions [ 'handlebars',
+196 silly addNameRange   [ '1.0.6',
+196 silly addNameRange     '1.0.6-2',
+196 silly addNameRange     '1.0.7',
+196 silly addNameRange     '1.0.8',
+196 silly addNameRange     '1.0.9',
+196 silly addNameRange     '1.0.10',
+196 silly addNameRange     '1.0.11',
+196 silly addNameRange     '1.0.12',
+196 silly addNameRange     '1.1.0',
+196 silly addNameRange     '1.1.1',
+196 silly addNameRange     '1.1.2',
+196 silly addNameRange     '1.2.0',
+196 silly addNameRange     '1.2.1',
+196 silly addNameRange     '1.3.0',
+196 silly addNameRange     '2.0.0-alpha.1',
+196 silly addNameRange     '2.0.0-alpha.2',
+196 silly addNameRange     '2.0.0-alpha.3',
+196 silly addNameRange     '2.0.0-alpha.4',
+196 silly addNameRange     '2.0.0-beta.1',
+196 silly addNameRange     '2.0.0',
+196 silly addNameRange     '1.0.2-beta',
+196 silly addNameRange     '1.0.4-beta',
+196 silly addNameRange     '1.0.5-beta' ] ]
+197 verbose addNamed [ 'handlebars', '1.0.12' ]
+198 verbose addNamed [ '1.0.12', '1.0.12' ]
+199 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+200 verbose lock handlebars@1.0.12 /home/bitnami/.npm/75f4e88f-handlebars-1-0-12.lock
+201 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+202 verbose lock https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz /home/bitnami/.npm/998b3f7e-handlebars-handlebars-1-0-12-tgz.lock
+203 verbose addRemoteTarball [ 'https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz',
+203 verbose addRemoteTarball   '18c6d3440c35e91b19b3ff582b9151ab4985d4fc' ]
+204 info retry fetch attempt 1 at 13:37:51
+205 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+206 http GET https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+207 http 200 https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+208 http 200 https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+209 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+210 silly lockFile 998b3f7e-handlebars-handlebars-1-0-12-tgz https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz
+211 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+212 silly lockFile 75f4e88f-handlebars-1-0-12 handlebars@1.0.12
+213 silly lockFile 10a3679e-handlebars-1-0-0-beta-6 handlebars@~> 1.0.0-beta.6
+214 silly lockFile 10a3679e-handlebars-1-0-0-beta-6 handlebars@~> 1.0.0-beta.6
+215 silly lockFile fd8dfbba-pmjs-org-jquery-jquery-1-7-3-tgz https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+216 silly lockFile fd8dfbba-pmjs-org-jquery-jquery-1-7-3-tgz https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz
+217 silly lockFile d7d4fb7a-jquery-1-7-3 jquery@1.7.3
+218 silly lockFile d7d4fb7a-jquery-1-7-3 jquery@1.7.3
+219 silly lockFile ac7afeeb-jquery-1-7-0 jquery@~> 1.7.0
+220 silly lockFile ac7afeeb-jquery-1-7-0 jquery@~> 1.7.0
+221 http 200 https://registry.npmjs.org/convoy
+222 silly registry.get cb [ 200,
+222 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:51 GMT',
+222 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+222 silly registry.get     etag: '"APGCDJUD9ULSIL5N0Z1L7UY5W"',
+222 silly registry.get     'content-type': 'application/json',
+222 silly registry.get     'cache-control': 'max-age=60',
+222 silly registry.get     'content-length': '42819',
+222 silly registry.get     'accept-ranges': 'bytes',
+222 silly registry.get     via: '1.1 varnish',
+222 silly registry.get     age: '0',
+222 silly registry.get     'x-served-by': 'cache-lcy1128-LCY',
+222 silly registry.get     'x-cache': 'MISS',
+222 silly registry.get     'x-cache-hits': '0',
+222 silly registry.get     'x-timer': 'S1414935470.884912,VS0,VE443',
+222 silly registry.get     vary: 'Accept',
+222 silly registry.get     'keep-alive': 'timeout=10, max=50',
+222 silly registry.get     connection: 'Keep-Alive' } ]
+223 silly addNameRange number 2 { name: 'convoy', range: '>=0.3.0-0 <0.4.0-0', hasData: true }
+224 silly addNameRange versions [ 'convoy',
+224 silly addNameRange   [ '0.1.0',
+224 silly addNameRange     '0.1.1',
+224 silly addNameRange     '0.1.2',
+224 silly addNameRange     '0.2.0',
+224 silly addNameRange     '0.3.0',
+224 silly addNameRange     '0.3.1',
+224 silly addNameRange     '0.3.2',
+224 silly addNameRange     '0.4.0',
+224 silly addNameRange     '0.4.1' ] ]
+225 verbose addNamed [ 'convoy', '0.3.2' ]
+226 verbose addNamed [ '0.3.2', '0.3.2' ]
+227 silly lockFile 832532bf-convoy-0-3-2 convoy@0.3.2
+228 verbose lock convoy@0.3.2 /home/bitnami/.npm/832532bf-convoy-0-3-2.lock
+229 verbose git clone git://github.com/charlesjolley/node-window.git Cloning into bare repository '/home/bitnami/.npm/_git-remotes/git-github-com-charlesjolley-node-window-git-b5907bad'...
+230 silly lockFile 4d386527-pmjs-org-convoy-convoy-0-3-2-tgz https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+231 verbose lock https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz /home/bitnami/.npm/4d386527-pmjs-org-convoy-convoy-0-3-2-tgz.lock
+232 verbose addRemoteTarball [ 'https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz',
+232 verbose addRemoteTarball   'b85a64bc63d367aaba6c70116943fd4f75774405' ]
+233 info retry fetch attempt 1 at 13:37:51
+234 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+235 http GET https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+236 verbose git fetch -a origin (git://github.com/charlesjolley/node-window.git)
+237 verbose git rev-list -n1 master 3d314d9d716a5c648f14d6c33a7519558c6e7270
+238 verbose resolved git url git://github.com/charlesjolley/node-window.git#3d314d9d716a5c648f14d6c33a7519558c6e7270
+239 verbose tar unpack /tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz
+240 silly lockFile 102775fc--4153395686298609-tmp-tgz-unpack tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz-unpack
+241 verbose lock tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz-unpack /home/bitnami/.npm/102775fc--4153395686298609-tmp-tgz-unpack.lock
+242 silly lockFile 8fac3f4e-71979-0-4153395686298609-tmp-tgz tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz
+243 verbose lock tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz /home/bitnami/.npm/8fac3f4e-71979-0-4153395686298609-tmp-tgz.lock
+244 silly gunzTarPerm modes [ '755', '644' ]
+245 silly gunzTarPerm extractEntry
+246 silly gunzTarPerm modified mode [ '', 509, 493 ]
+247 silly gunzTarPerm extractEntry .gitignore
+248 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+249 silly gunzTarPerm extractEntry convoy-index.js
+250 silly gunzTarPerm modified mode [ 'convoy-index.js', 436, 420 ]
+251 silly gunzTarPerm extractEntry index.js
+252 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+253 silly gunzTarPerm extractEntry package.json
+254 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+255 silly lockFile 102775fc--4153395686298609-tmp-tgz-unpack tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz-unpack
+256 silly lockFile 102775fc--4153395686298609-tmp-tgz-unpack tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz-unpack
+257 silly lockFile 8fac3f4e-71979-0-4153395686298609-tmp-tgz tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz
+258 silly lockFile 8fac3f4e-71979-0-4153395686298609-tmp-tgz tar:///tmp/npm-2388-3AnUXTh-/1414935471979-0.4153395686298609/tmp.tgz
+259 silly lockFile b5907bad-om-charlesjolley-node-window-git git://github.com/charlesjolley/node-window.git
+260 silly lockFile b5907bad-om-charlesjolley-node-window-git git://github.com/charlesjolley/node-window.git
+261 http 200 https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+262 silly lockFile 4d386527-pmjs-org-convoy-convoy-0-3-2-tgz https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+263 silly lockFile 4d386527-pmjs-org-convoy-convoy-0-3-2-tgz https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz
+264 silly lockFile 832532bf-convoy-0-3-2 convoy@0.3.2
+265 silly lockFile 832532bf-convoy-0-3-2 convoy@0.3.2
+266 silly lockFile 5e197d42-convoy-0-3 convoy@~0.3
+267 silly lockFile 5e197d42-convoy-0-3 convoy@~0.3
+268 silly resolved [ { name: 'handlebars',
+268 silly resolved     description: 'Extension of the Mustache logicless template language',
+268 silly resolved     version: '1.0.12',
+268 silly resolved     homepage: 'http://www.handlebarsjs.com/',
+268 silly resolved     keywords: [ 'handlebars mustache template html' ],
+268 silly resolved     repository:
+268 silly resolved      { type: 'git',
+268 silly resolved        url: 'git://github.com/wycats/handlebars.js.git' },
+268 silly resolved     engines: { node: '>=0.4.7' },
+268 silly resolved     dependencies: { optimist: '~0.3', 'uglify-js': '~2.3' },
+268 silly resolved     devDependencies:
+268 silly resolved      { benchmark: '~1.0',
+268 silly resolved        dust: '~0.3',
+268 silly resolved        jison: '~0.3',
+268 silly resolved        mocha: '*',
+268 silly resolved        mustache: '~0.7.2' },
+268 silly resolved     main: 'lib/handlebars.js',
+268 silly resolved     bin: { handlebars: 'bin/handlebars' },
+268 silly resolved     scripts: { test: 'node_modules/.bin/mocha -u qunit spec/qunit_spec.js' },
+268 silly resolved     optionalDependencies: {},
+268 silly resolved     _id: 'handlebars@1.0.12',
+268 silly resolved     dist:
+268 silly resolved      { shasum: '18c6d3440c35e91b19b3ff582b9151ab4985d4fc',
+268 silly resolved        tarball: 'http://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz' },
+268 silly resolved     _from: 'handlebars@~> 1.0.0-beta.6',
+268 silly resolved     _npmVersion: '1.2.2',
+268 silly resolved     _npmUser: { name: 'kpdecker', email: 'kpdecker@gmail.com' },
+268 silly resolved     maintainers: [ [Object] ],
+268 silly resolved     directories: {},
+268 silly resolved     _shasum: '18c6d3440c35e91b19b3ff582b9151ab4985d4fc',
+268 silly resolved     _resolved: 'https://registry.npmjs.org/handlebars/-/handlebars-1.0.12.tgz' },
+268 silly resolved   { name: 'jquery',
+268 silly resolved     description: 'jQuery: The Write Less, Do More, JavaScript Library (packaged for Node.JS)',
+268 silly resolved     version: '1.7.3',
+268 silly resolved     url: 'http://jquery.com',
+268 silly resolved     homepage: 'https://github.com/coolaj86/node-jquery',
+268 silly resolved     author: { name: 'James Morrin', email: 'treasonx@gmail.com' },
+268 silly resolved     repository:
+268 silly resolved      { type: 'git',
+268 silly resolved        url: 'git://github.com/coolaj86/node-jquery.git' },
+268 silly resolved     bugs: { url: 'https://github.com/coolaj86/node-jquery/issues' },
+268 silly resolved     licenses: [ [Object] ],
+268 silly resolved     main: 'lib/node-jquery',
+268 silly resolved     engines: { node: '>=0.6' },
+268 silly resolved     scripts: { test: 'grunt test' },
+268 silly resolved     dependencies:
+268 silly resolved      { jsdom: '~0.2.14',
+268 silly resolved        htmlparser: '1.7.6',
+268 silly resolved        xmlhttprequest: '~1.4.2',
+268 silly resolved        location: '0.0.1',
+268 silly resolved        navigator: '~1.0.1' },
+268 silly resolved     devDependencies: { grunt: '~0.3.8', nodeunit: '~0.7.4' },
+268 silly resolved     keywords: [ 'util', 'dom', 'jquery' ],
+268 silly resolved     _id: 'jquery@1.7.3',
+268 silly resolved     dist:
+268 silly resolved      { shasum: 'e3d00a71612ac7e9b554b438e0987d0272ddba94',
+268 silly resolved        tarball: 'http://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz' },
+268 silly resolved     maintainers: [ [Object], [Object] ],
+268 silly resolved     directories: {},
+268 silly resolved     _shasum: 'e3d00a71612ac7e9b554b438e0987d0272ddba94',
+268 silly resolved     _from: 'jquery@~> 1.7.0',
+268 silly resolved     _resolved: 'https://registry.npmjs.org/jquery/-/jquery-1.7.3.tgz' },
+268 silly resolved   { name: 'window',
+268 silly resolved     version: '1.0.0',
+268 silly resolved     author: { name: 'Charles Jolley', email: 'charles@sproutcore.com' },
+268 silly resolved     homepage: 'http://github.com/charlesjolley/node-window',
+268 silly resolved     repository:
+268 silly resolved      { type: 'git',
+268 silly resolved        url: 'git://github.com/charlesjolley/node-window.git' },
+268 silly resolved     bugs: { url: 'http://github.com/charlesjolley/node-window/issues' },
+268 silly resolved     main: './index.js',
+268 silly resolved     convoy: { main: './convoy-index.js' },
+268 silly resolved     engines: { node: '0.6' },
+268 silly resolved     dependencies:
+268 silly resolved      { jsdom: '~0.2.14',
+268 silly resolved        htmlparser: '1.7.6',
+268 silly resolved        xmlhttprequest: '~1.3.0' },
+268 silly resolved     keywords: [ 'dom', 'browser', 'convoy' ],
+268 silly resolved     readme: 'ERROR: No README data found!',
+268 silly resolved     _id: 'window@1.0.0',
+268 silly resolved     _shasum: '363147138cbf4dde78f2f9b56eb881096b6f0dde',
+268 silly resolved     _resolved: 'git://github.com/charlesjolley/node-window.git#3d314d9d716a5c648f14d6c33a7519558c6e7270',
+268 silly resolved     _from: 'window@git://github.com/charlesjolley/node-window.git#master' },
+268 silly resolved   { name: 'convoy',
+268 silly resolved     version: '0.3.2',
+268 silly resolved     author: { name: 'Charles Jolley', email: 'charles@sproutcore.com' },
+268 silly resolved     description: 'Pluggable, package-aware asset pipeline for node',
+268 silly resolved     keywords: [ 'asset', 'pipeline', 'connect', 'jake', 'build', 'tools' ],
+268 silly resolved     homepage: 'http://github.com/node-convoy/convoy',
+268 silly resolved     bugs: { url: 'http://github.com/node-convoy/convoy/issues' },
+268 silly resolved     repository: { type: 'git', url: 'git://github.com/node-convoy/convoy.git' },
+268 silly resolved     main: './lib/index.js',
+268 silly resolved     dependencies:
+268 silly resolved      { async: '0.1.x',
+268 silly resolved        'uglify-js': '~1.2',
+268 silly resolved        glob: '~3.1',
+268 silly resolved        mime: '~1.2',
+268 silly resolved        'coffee-script': '~1.3',
+268 silly resolved        connect: '~2.2',
+268 silly resolved        commander: '~0.5' },
+268 silly resolved     devDependencies:
+268 silly resolved      { should: 'latest',
+268 silly resolved        mocha: 'latest',
+268 silly resolved        dox: 'latest',
+268 silly resolved        temp: 'latest' },
+268 silly resolved     scripts: { test: './node_modules/.bin/mocha --reporter list' },
+268 silly resolved     bin: { convoy: './bin/convoy' },
+268 silly resolved     _npmUser: { name: 'charlesjolley', email: 'charles@sproutcore.com' },
+268 silly resolved     _id: 'convoy@0.3.2',
+268 silly resolved     optionalDependencies: {},
+268 silly resolved     engines: { node: '*' },
+268 silly resolved     _engineSupported: true,
+268 silly resolved     _npmVersion: '1.1.19',
+268 silly resolved     _nodeVersion: 'v0.6.16',
+268 silly resolved     _defaultsLoaded: true,
+268 silly resolved     dist:
+268 silly resolved      { shasum: 'b85a64bc63d367aaba6c70116943fd4f75774405',
+268 silly resolved        tarball: 'http://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz' },
+268 silly resolved     maintainers: [ [Object] ],
+268 silly resolved     directories: {},
+268 silly resolved     _shasum: 'b85a64bc63d367aaba6c70116943fd4f75774405',
+268 silly resolved     _from: 'convoy@~0.3',
+268 silly resolved     _resolved: 'https://registry.npmjs.org/convoy/-/convoy-0.3.2.tgz' } ]
+269 info install handlebars@1.0.12 into /home/bitnami/chartjs_dashboard/node_modules/ember
+270 info install jquery@1.7.3 into /home/bitnami/chartjs_dashboard/node_modules/ember
+271 info install window@1.0.0 into /home/bitnami/chartjs_dashboard/node_modules/ember
+272 info install convoy@0.3.2 into /home/bitnami/chartjs_dashboard/node_modules/ember
+273 info installOne handlebars@1.0.12
+274 info installOne jquery@1.7.3
+275 info installOne window@1.0.0
+276 warn engine window@1.0.0: wanted: {"node":"0.6"} (current: {"node":"0.10.31","npm":"1.4.21"})
+277 info installOne convoy@0.3.2
+278 verbose node_modules/ember/node_modules/handlebars unbuild
+279 verbose node_modules/ember/node_modules/jquery unbuild
+280 verbose node_modules/ember/node_modules/window unbuild
+281 verbose node_modules/ember/node_modules/convoy unbuild
+282 verbose tar unpack /home/bitnami/.npm/handlebars/1.0.12/package.tgz
+283 silly lockFile 153cf0e0-es-ember-node-modules-handlebars tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars
+284 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars /home/bitnami/.npm/153cf0e0-es-ember-node-modules-handlebars.lock
+285 silly lockFile 36411ade-pm-handlebars-1-0-12-package-tgz tar:///home/bitnami/.npm/handlebars/1.0.12/package.tgz
+286 verbose lock tar:///home/bitnami/.npm/handlebars/1.0.12/package.tgz /home/bitnami/.npm/36411ade-pm-handlebars-1-0-12-package-tgz.lock
+287 verbose tar unpack /home/bitnami/.npm/jquery/1.7.3/package.tgz
+288 silly lockFile 9b0b0b6f-odules-ember-node-modules-jquery tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/jquery
+289 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/jquery /home/bitnami/.npm/9b0b0b6f-odules-ember-node-modules-jquery.lock
+290 silly lockFile 42c7b084-ami-npm-jquery-1-7-3-package-tgz tar:///home/bitnami/.npm/jquery/1.7.3/package.tgz
+291 verbose lock tar:///home/bitnami/.npm/jquery/1.7.3/package.tgz /home/bitnami/.npm/42c7b084-ami-npm-jquery-1-7-3-package-tgz.lock
+292 verbose tar unpack /home/bitnami/.npm/window/1.0.0/package.tgz
+293 silly lockFile a53ca17f-odules-ember-node-modules-window tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/window
+294 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/window /home/bitnami/.npm/a53ca17f-odules-ember-node-modules-window.lock
+295 silly lockFile b916c214-ami-npm-window-1-0-0-package-tgz tar:///home/bitnami/.npm/window/1.0.0/package.tgz
+296 verbose lock tar:///home/bitnami/.npm/window/1.0.0/package.tgz /home/bitnami/.npm/b916c214-ami-npm-window-1-0-0-package-tgz.lock
+297 verbose tar unpack /home/bitnami/.npm/convoy/0.3.2/package.tgz
+298 silly lockFile 9fcc360f-odules-ember-node-modules-convoy tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/convoy
+299 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/convoy /home/bitnami/.npm/9fcc360f-odules-ember-node-modules-convoy.lock
+300 silly lockFile 6c1eec0f-ami-npm-convoy-0-3-2-package-tgz tar:///home/bitnami/.npm/convoy/0.3.2/package.tgz
+301 verbose lock tar:///home/bitnami/.npm/convoy/0.3.2/package.tgz /home/bitnami/.npm/6c1eec0f-ami-npm-convoy-0-3-2-package-tgz.lock
+302 silly gunzTarPerm modes [ '755', '644' ]
+303 silly gunzTarPerm modes [ '755', '644' ]
+304 silly gunzTarPerm modes [ '755', '644' ]
+305 silly gunzTarPerm modes [ '755', '644' ]
+306 silly gunzTarPerm extractEntry package.json
+307 silly gunzTarPerm extractEntry package.json
+308 silly gunzTarPerm extractEntry
+309 silly gunzTarPerm modified mode [ '', 509, 493 ]
+310 silly gunzTarPerm extractEntry package.json
+311 silly gunzTarPerm extractEntry .npmignore
+312 silly gunzTarPerm extractEntry LICENSE
+313 silly gunzTarPerm extractEntry .npmignore
+314 silly gunzTarPerm extractEntry README.md
+315 silly gunzTarPerm extractEntry .npmignore
+316 silly gunzTarPerm extractEntry README.md
+317 silly gunzTarPerm extractEntry .gitignore
+318 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+319 silly gunzTarPerm extractEntry convoy-index.js
+320 silly gunzTarPerm modified mode [ 'convoy-index.js', 436, 420 ]
+321 silly gunzTarPerm extractEntry index.js
+322 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+323 silly gunzTarPerm extractEntry package.json
+324 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+325 silly gunzTarPerm extractEntry test.js
+326 silly gunzTarPerm extractEntry global-test.js
+327 silly gunzTarPerm extractEntry grunt.js
+328 silly gunzTarPerm extractEntry lib/node-jquery.js
+329 silly gunzTarPerm extractEntry examples/todos/package.json
+330 silly gunzTarPerm extractEntry examples/todos/app/main.js
+331 silly gunzTarPerm extractEntry global.js
+332 silly gunzTarPerm extractEntry .jshintrc
+333 silly gunzTarPerm extractEntry examples/todos/app/todo_view.js
+334 silly gunzTarPerm extractEntry LICENSE-MIT
+335 silly gunzTarPerm extractEntry .rspec
+336 silly gunzTarPerm extractEntry bin/handlebars
+337 silly gunzTarPerm extractEntry src/wrapper.js
+338 silly gunzTarPerm extractEntry test/core.js
+339 silly gunzTarPerm extractEntry handlebars.js.nuspec
+340 silly gunzTarPerm extractEntry test/css.js
+341 silly lockFile a53ca17f-odules-ember-node-modules-window tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/window
+342 silly lockFile a53ca17f-odules-ember-node-modules-window tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/window
+343 silly lockFile b916c214-ami-npm-window-1-0-0-package-tgz tar:///home/bitnami/.npm/window/1.0.0/package.tgz
+344 silly lockFile b916c214-ami-npm-window-1-0-0-package-tgz tar:///home/bitnami/.npm/window/1.0.0/package.tgz
+345 silly gunzTarPerm extractEntry lib/handlebars.js
+346 silly gunzTarPerm extractEntry lib/handlebars/base.js
+347 silly gunzTarPerm extractEntry examples/todos/app/assets/destroy.png
+348 silly gunzTarPerm extractEntry examples/todos/app/index.html
+349 info preinstall window@1.0.0
+350 verbose readDependencies using package.json deps
+351 verbose readDependencies using package.json deps
+352 silly gunzTarPerm extractEntry lib/handlebars/browser-prefix.js
+353 silly gunzTarPerm extractEntry lib/handlebars/browser-suffix.js
+354 verbose cache add [ 'jsdom@~0.2.14', null ]
+355 verbose cache add name=undefined spec="jsdom@~0.2.14" args=["jsdom@~0.2.14",null]
+356 verbose parsed url { protocol: null,
+356 verbose parsed url   slashes: null,
+356 verbose parsed url   auth: null,
+356 verbose parsed url   host: null,
+356 verbose parsed url   port: null,
+356 verbose parsed url   hostname: null,
+356 verbose parsed url   hash: null,
+356 verbose parsed url   search: null,
+356 verbose parsed url   query: null,
+356 verbose parsed url   pathname: 'jsdom@~0.2.14',
+356 verbose parsed url   path: 'jsdom@~0.2.14',
+356 verbose parsed url   href: 'jsdom@~0.2.14' }
+357 verbose cache add [ 'htmlparser@1.7.6', null ]
+358 verbose cache add name=undefined spec="htmlparser@1.7.6" args=["htmlparser@1.7.6",null]
+359 verbose parsed url { protocol: null,
+359 verbose parsed url   slashes: null,
+359 verbose parsed url   auth: null,
+359 verbose parsed url   host: null,
+359 verbose parsed url   port: null,
+359 verbose parsed url   hostname: null,
+359 verbose parsed url   hash: null,
+359 verbose parsed url   search: null,
+359 verbose parsed url   query: null,
+359 verbose parsed url   pathname: 'htmlparser@1.7.6',
+359 verbose parsed url   path: 'htmlparser@1.7.6',
+359 verbose parsed url   href: 'htmlparser@1.7.6' }
+360 verbose cache add name="jsdom" spec="~0.2.14" args=["jsdom","~0.2.14"]
+361 verbose parsed url { protocol: null,
+361 verbose parsed url   slashes: null,
+361 verbose parsed url   auth: null,
+361 verbose parsed url   host: null,
+361 verbose parsed url   port: null,
+361 verbose parsed url   hostname: null,
+361 verbose parsed url   hash: null,
+361 verbose parsed url   search: null,
+361 verbose parsed url   query: null,
+361 verbose parsed url   pathname: '~0.2.14',
+361 verbose parsed url   path: '~0.2.14',
+361 verbose parsed url   href: '~0.2.14' }
+362 verbose addNamed [ 'jsdom', '~0.2.14' ]
+363 verbose addNamed [ null, '>=0.2.14-0 <0.3.0-0' ]
+364 silly lockFile dfb30512-jsdom-0-2-14 jsdom@~0.2.14
+365 verbose lock jsdom@~0.2.14 /home/bitnami/.npm/dfb30512-jsdom-0-2-14.lock
+366 verbose cache add name="htmlparser" spec="1.7.6" args=["htmlparser","1.7.6"]
+367 verbose parsed url { protocol: null,
+367 verbose parsed url   slashes: null,
+367 verbose parsed url   auth: null,
+367 verbose parsed url   host: null,
+367 verbose parsed url   port: null,
+367 verbose parsed url   hostname: null,
+367 verbose parsed url   hash: null,
+367 verbose parsed url   search: null,
+367 verbose parsed url   query: null,
+367 verbose parsed url   pathname: '1.7.6',
+367 verbose parsed url   path: '1.7.6',
+367 verbose parsed url   href: '1.7.6' }
+368 verbose addNamed [ 'htmlparser', '1.7.6' ]
+369 verbose addNamed [ '1.7.6', '1.7.6' ]
+370 silly lockFile 1f8880a7-htmlparser-1-7-6 htmlparser@1.7.6
+371 verbose lock htmlparser@1.7.6 /home/bitnami/.npm/1f8880a7-htmlparser-1-7-6.lock
+372 verbose cache add [ 'xmlhttprequest@~1.3.0', null ]
+373 verbose cache add name=undefined spec="xmlhttprequest@~1.3.0" args=["xmlhttprequest@~1.3.0",null]
+374 verbose parsed url { protocol: null,
+374 verbose parsed url   slashes: null,
+374 verbose parsed url   auth: null,
+374 verbose parsed url   host: null,
+374 verbose parsed url   port: null,
+374 verbose parsed url   hostname: null,
+374 verbose parsed url   hash: null,
+374 verbose parsed url   search: null,
+374 verbose parsed url   query: null,
+374 verbose parsed url   pathname: 'xmlhttprequest@~1.3.0',
+374 verbose parsed url   path: 'xmlhttprequest@~1.3.0',
+374 verbose parsed url   href: 'xmlhttprequest@~1.3.0' }
+375 verbose cache add name="xmlhttprequest" spec="~1.3.0" args=["xmlhttprequest","~1.3.0"]
+376 verbose parsed url { protocol: null,
+376 verbose parsed url   slashes: null,
+376 verbose parsed url   auth: null,
+376 verbose parsed url   host: null,
+376 verbose parsed url   port: null,
+376 verbose parsed url   hostname: null,
+376 verbose parsed url   hash: null,
+376 verbose parsed url   search: null,
+376 verbose parsed url   query: null,
+376 verbose parsed url   pathname: '~1.3.0',
+376 verbose parsed url   path: '~1.3.0',
+376 verbose parsed url   href: '~1.3.0' }
+377 verbose addNamed [ 'xmlhttprequest', '~1.3.0' ]
+378 verbose addNamed [ null, '>=1.3.0-0 <1.4.0-0' ]
+379 silly lockFile a5beb310-xmlhttprequest-1-3-0 xmlhttprequest@~1.3.0
+380 verbose lock xmlhttprequest@~1.3.0 /home/bitnami/.npm/a5beb310-xmlhttprequest-1-3-0.lock
+381 silly gunzTarPerm extractEntry examples/todos/app/styles/index.css
+382 silly gunzTarPerm extractEntry examples/todos/app/styles/reset.css
+383 silly addNameRange { name: 'jsdom', range: '>=0.2.14-0 <0.3.0-0', hasData: false }
+384 verbose request where is /jsdom
+385 verbose request registry https://registry.npmjs.org/
+386 verbose url raw /jsdom
+387 verbose url resolving [ 'https://registry.npmjs.org/', './jsdom' ]
+388 verbose url resolved https://registry.npmjs.org/jsdom
+389 verbose request where is https://registry.npmjs.org/jsdom
+390 info trying registry request attempt 1 at 13:37:52
+391 http GET https://registry.npmjs.org/jsdom
+392 verbose request where is /htmlparser
+393 verbose request registry https://registry.npmjs.org/
+394 verbose url raw /htmlparser
+395 verbose url resolving [ 'https://registry.npmjs.org/', './htmlparser' ]
+396 verbose url resolved https://registry.npmjs.org/htmlparser
+397 verbose request where is https://registry.npmjs.org/htmlparser
+398 info trying registry request attempt 1 at 13:37:52
+399 http GET https://registry.npmjs.org/htmlparser
+400 silly addNameRange { name: 'xmlhttprequest',
+400 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+400 silly addNameRange   hasData: false }
+401 verbose request where is /xmlhttprequest
+402 verbose request registry https://registry.npmjs.org/
+403 verbose url raw /xmlhttprequest
+404 verbose url resolving [ 'https://registry.npmjs.org/', './xmlhttprequest' ]
+405 verbose url resolved https://registry.npmjs.org/xmlhttprequest
+406 verbose request where is https://registry.npmjs.org/xmlhttprequest
+407 info trying registry request attempt 1 at 13:37:52
+408 http GET https://registry.npmjs.org/xmlhttprequest
+409 silly gunzTarPerm extractEntry lib/handlebars/runtime.js
+410 silly gunzTarPerm extractEntry lib/handlebars/utils.js
+411 silly gunzTarPerm extractEntry lib/handlebars/compiler/ast.js
+412 silly gunzTarPerm extractEntry lib/handlebars/compiler/base.js
+413 silly gunzTarPerm extractEntry examples/todos/Jakefile
+414 silly gunzTarPerm extractEntry fixtures/local_dependencies.js
+415 silly gunzTarPerm extractEntry fixtures/required_module.js
+416 silly gunzTarPerm extractEntry fixtures/test_module.js
+417 silly gunzTarPerm extractEntry lib/handlebars/compiler/compiler.js
+418 silly gunzTarPerm extractEntry lib/handlebars/compiler/index.js
+419 silly gunzTarPerm extractEntry fixtures/test_module_2.js
+420 silly gunzTarPerm extractEntry fixtures/circular/first.js
+421 silly gunzTarPerm extractEntry lib/handlebars/compiler/parser.js
+422 silly gunzTarPerm extractEntry lib/handlebars/compiler/printer.js
+423 silly gunzTarPerm extractEntry fixtures/circular/second.js
+424 silly gunzTarPerm extractEntry fixtures/commonjs_package/package.json
+425 silly gunzTarPerm extractEntry lib/handlebars/compiler/visitor.js
+426 silly gunzTarPerm extractEntry lib/handlebars/source.rb
+427 silly gunzTarPerm extractEntry fixtures/commonjs_package/single.js
+428 silly gunzTarPerm extractEntry fixtures/commonjs_package/lib/foo.js
+429 silly gunzTarPerm extractEntry bower.json
+430 silly gunzTarPerm extractEntry min.sh
+431 silly gunzTarPerm extractEntry fixtures/commonjs_package/lib/index.js
+432 silly gunzTarPerm extractEntry fixtures/demo_package/package.json
+433 silly gunzTarPerm extractEntry dist/handlebars.js
+434 silly gunzTarPerm extractEntry dist/handlebars.min.js
+435 silly gunzTarPerm extractEntry fixtures/demo_package/conflict_test.js
+436 silly gunzTarPerm extractEntry fixtures/demo_package/main.js
+437 silly gunzTarPerm extractEntry dist/handlebars.runtime.js
+438 silly gunzTarPerm extractEntry dist/handlebars.runtime.min.js
+439 silly gunzTarPerm extractEntry fixtures/demo_package/lib/mod1.js
+440 silly gunzTarPerm extractEntry fixtures/demo_package/lib/requires_package.js
+441 silly gunzTarPerm extractEntry README.markdown
+442 silly gunzTarPerm extractEntry release-notes.md
+443 silly gunzTarPerm extractEntry fixtures/middleware/package.json
+444 silly gunzTarPerm extractEntry fixtures/middleware/groceries.js
+445 silly gunzTarPerm extractEntry fixtures/middleware/todo.js
+446 silly gunzTarPerm extractEntry fixtures/middleware/foo bar.css
+447 silly gunzTarPerm extractEntry handlebars-source.gemspec
+448 silly gunzTarPerm extractEntry fixtures/middleware/nums.css
+449 silly gunzTarPerm extractEntry fixtures/middleware/users/.hidden
+450 silly gunzTarPerm extractEntry fixtures/middleware/users/index.html
+451 silly gunzTarPerm extractEntry fixtures/middleware/users/nums.txt
+452 silly gunzTarPerm extractEntry fixtures/middleware/users/tobi.txt
+453 silly gunzTarPerm extractEntry fixtures/sample_app/package.json
+454 silly gunzTarPerm extractEntry fixtures/sample_app/app/core.js
+455 silly gunzTarPerm extractEntry fixtures/sample_app/app/main.js
+456 silly gunzTarPerm extractEntry fixtures/sample_app/app/models/person.js
+457 silly gunzTarPerm extractEntry fixtures/sample_app/app/templates/main_template.js
+458 silly gunzTarPerm extractEntry fixtures/sample_app/app/templates/main_template.hbr
+459 silly gunzTarPerm extractEntry fixtures/sample_app/app/views/main_view.js
+460 silly gunzTarPerm extractEntry fixtures/sample_app/assets/images/a.png
+461 silly gunzTarPerm extractEntry fixtures/sample_app/assets/images/b.png
+462 silly gunzTarPerm extractEntry fixtures/sample_app/assets/index.html
+463 silly gunzTarPerm extractEntry fixtures/sample_app/styles/global.css
+464 silly gunzTarPerm extractEntry fixtures/sample_app/styles/index.css
+465 silly gunzTarPerm extractEntry fixtures/sample_app/styles/models.css
+466 silly gunzTarPerm extractEntry lib/asset_copier.js
+467 silly gunzTarPerm extractEntry lib/asset_packager.js
+468 silly gunzTarPerm extractEntry lib/index.js
+469 silly gunzTarPerm extractEntry lib/loader.js
+470 silly gunzTarPerm extractEntry lib/logged_events.js
+471 silly gunzTarPerm extractEntry lib/middleware.js
+472 silly gunzTarPerm extractEntry lib/packagers.js
+473 silly gunzTarPerm extractEntry lib/pipeline.js
+474 silly gunzTarPerm extractEntry lib/resolver.js
+475 silly gunzTarPerm extractEntry lib/utils.js
+476 silly gunzTarPerm extractEntry bin/convoy
+477 silly gunzTarPerm extractEntry TODO.txt
+478 silly gunzTarPerm extractEntry pipeline_plugins/coffeescript_compiler.js
+479 silly gunzTarPerm extractEntry pipeline_plugins/commonjs_analyzer.js
+480 silly gunzTarPerm extractEntry pipeline_plugins/commonjs_linker.js
+481 silly gunzTarPerm extractEntry pipeline_plugins/css_compiler.js
+482 silly gunzTarPerm extractEntry pipeline_plugins/generic_analyzer.js
+483 silly gunzTarPerm extractEntry pipeline_plugins/generic_compiler.js
+484 silly gunzTarPerm extractEntry pipeline_plugins/index.js
+485 silly gunzTarPerm extractEntry pipeline_plugins/javascript_compiler.js
+486 silly gunzTarPerm extractEntry pipeline_plugins/simple_merge_linker.js
+487 silly gunzTarPerm extractEntry pipeline_plugins/uglify_minifier.js
+488 silly gunzTarPerm extractEntry PLUGIN_GUIDE.md
+489 silly gunzTarPerm extractEntry CHANGELOG.md
+490 silly gunzTarPerm extractEntry test/asset_copier_test.js
+491 silly gunzTarPerm extractEntry test/asset_packager_test.js
+492 http 200 https://registry.npmjs.org/xmlhttprequest
+493 silly registry.get cb [ 200,
+493 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+493 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+493 silly registry.get     etag: '"HM8UZ7XDB3PXR76DQ2U4KQEE"',
+493 silly registry.get     'content-type': 'application/json',
+493 silly registry.get     'cache-control': 'max-age=60',
+493 silly registry.get     'content-length': '17258',
+493 silly registry.get     'accept-ranges': 'bytes',
+493 silly registry.get     via: '1.1 varnish',
+493 silly registry.get     age: '34',
+493 silly registry.get     'x-served-by': 'cache-lcy1130-LCY',
+493 silly registry.get     'x-cache': 'HIT',
+493 silly registry.get     'x-cache-hits': '1',
+493 silly registry.get     'x-timer': 'S1414935472.037195,VS0,VE0',
+493 silly registry.get     vary: 'Accept',
+493 silly registry.get     'keep-alive': 'timeout=10, max=50',
+493 silly registry.get     connection: 'Keep-Alive' } ]
+494 silly addNameRange number 2 { name: 'xmlhttprequest',
+494 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+494 silly addNameRange   hasData: true }
+495 silly addNameRange versions [ 'xmlhttprequest',
+495 silly addNameRange   [ '1.0.0',
+495 silly addNameRange     '1.2.0',
+495 silly addNameRange     '1.2.1',
+495 silly addNameRange     '1.2.2',
+495 silly addNameRange     '1.3.0',
+495 silly addNameRange     '1.4.0',
+495 silly addNameRange     '1.4.2',
+495 silly addNameRange     '1.5.0',
+495 silly addNameRange     '1.6.0' ] ]
+496 verbose addNamed [ 'xmlhttprequest', '1.3.0' ]
+497 verbose addNamed [ '1.3.0', '1.3.0' ]
+498 silly lockFile 84f2c03f-xmlhttprequest-1-3-0 xmlhttprequest@1.3.0
+499 verbose lock xmlhttprequest@1.3.0 /home/bitnami/.npm/84f2c03f-xmlhttprequest-1-3-0.lock
+500 silly gunzTarPerm extractEntry test/commonjs_packager_test.js
+501 silly gunzTarPerm extractEntry test/loader_test.js
+502 silly lockFile a82bfb5f-request-xmlhttprequest-1-3-0-tgz https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.3.0.tgz
+503 verbose lock https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.3.0.tgz /home/bitnami/.npm/a82bfb5f-request-xmlhttprequest-1-3-0-tgz.lock
+504 verbose addRemoteTarball [ 'https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.3.0.tgz',
+504 verbose addRemoteTarball   'f6888d76176a9e4217694aa168a02c366e5d454a' ]
+505 silly gunzTarPerm extractEntry test/middleware_test.js
+506 silly gunzTarPerm extractEntry test/pipeline_test.js
+507 info retry fetch attempt 1 at 13:37:52
+508 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.3.0.tgz
+509 http GET https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.3.0.tgz
+510 silly gunzTarPerm extractEntry test/mocha.opts
+511 silly gunzTarPerm extractEntry test/support/helpers.js
+512 silly gunzTarPerm extractEntry test/support/http.js
+513 silly gunzTarPerm extractEntry Makefile
+514 silly gunzTarPerm extractEntry test/fixtures/core.html
+515 silly gunzTarPerm extractEntry test/fixtures/css.css
+516 silly gunzTarPerm extractEntry test/fixtures/css.html
+517 silly gunzTarPerm extractEntry test/helpers/helper.js
+518 silly gunzTarPerm extractEntry tmp/jquery.js
+519 silly lockFile 153cf0e0-es-ember-node-modules-handlebars tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars
+520 silly lockFile 153cf0e0-es-ember-node-modules-handlebars tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars
+521 silly lockFile 36411ade-pm-handlebars-1-0-12-package-tgz tar:///home/bitnami/.npm/handlebars/1.0.12/package.tgz
+522 silly lockFile 36411ade-pm-handlebars-1-0-12-package-tgz tar:///home/bitnami/.npm/handlebars/1.0.12/package.tgz
+523 info preinstall handlebars@1.0.12
+524 verbose readDependencies using package.json deps
+525 verbose readDependencies using package.json deps
+526 verbose cache add [ 'optimist@~0.3', null ]
+527 verbose cache add name=undefined spec="optimist@~0.3" args=["optimist@~0.3",null]
+528 verbose parsed url { protocol: null,
+528 verbose parsed url   slashes: null,
+528 verbose parsed url   auth: null,
+528 verbose parsed url   host: null,
+528 verbose parsed url   port: null,
+528 verbose parsed url   hostname: null,
+528 verbose parsed url   hash: null,
+528 verbose parsed url   search: null,
+528 verbose parsed url   query: null,
+528 verbose parsed url   pathname: 'optimist@~0.3',
+528 verbose parsed url   path: 'optimist@~0.3',
+528 verbose parsed url   href: 'optimist@~0.3' }
+529 verbose cache add [ 'uglify-js@~2.3', null ]
+530 verbose cache add name=undefined spec="uglify-js@~2.3" args=["uglify-js@~2.3",null]
+531 verbose parsed url { protocol: null,
+531 verbose parsed url   slashes: null,
+531 verbose parsed url   auth: null,
+531 verbose parsed url   host: null,
+531 verbose parsed url   port: null,
+531 verbose parsed url   hostname: null,
+531 verbose parsed url   hash: null,
+531 verbose parsed url   search: null,
+531 verbose parsed url   query: null,
+531 verbose parsed url   pathname: 'uglify-js@~2.3',
+531 verbose parsed url   path: 'uglify-js@~2.3',
+531 verbose parsed url   href: 'uglify-js@~2.3' }
+532 verbose cache add name="optimist" spec="~0.3" args=["optimist","~0.3"]
+533 verbose parsed url { protocol: null,
+533 verbose parsed url   slashes: null,
+533 verbose parsed url   auth: null,
+533 verbose parsed url   host: null,
+533 verbose parsed url   port: null,
+533 verbose parsed url   hostname: null,
+533 verbose parsed url   hash: null,
+533 verbose parsed url   search: null,
+533 verbose parsed url   query: null,
+533 verbose parsed url   pathname: '~0.3',
+533 verbose parsed url   path: '~0.3',
+533 verbose parsed url   href: '~0.3' }
+534 verbose addNamed [ 'optimist', '~0.3' ]
+535 verbose addNamed [ null, '>=0.3.0-0 <0.4.0-0' ]
+536 silly lockFile c01d0ea5-optimist-0-3 optimist@~0.3
+537 verbose lock optimist@~0.3 /home/bitnami/.npm/c01d0ea5-optimist-0-3.lock
+538 verbose cache add name="uglify-js" spec="~2.3" args=["uglify-js","~2.3"]
+539 verbose parsed url { protocol: null,
+539 verbose parsed url   slashes: null,
+539 verbose parsed url   auth: null,
+539 verbose parsed url   host: null,
+539 verbose parsed url   port: null,
+539 verbose parsed url   hostname: null,
+539 verbose parsed url   hash: null,
+539 verbose parsed url   search: null,
+539 verbose parsed url   query: null,
+539 verbose parsed url   pathname: '~2.3',
+539 verbose parsed url   path: '~2.3',
+539 verbose parsed url   href: '~2.3' }
+540 verbose addNamed [ 'uglify-js', '~2.3' ]
+541 verbose addNamed [ null, '>=2.3.0-0 <2.4.0-0' ]
+542 silly lockFile fb0c1b8a-uglify-js-2-3 uglify-js@~2.3
+543 verbose lock uglify-js@~2.3 /home/bitnami/.npm/fb0c1b8a-uglify-js-2-3.lock
+544 silly addNameRange { name: 'optimist', range: '>=0.3.0-0 <0.4.0-0', hasData: false }
+545 silly addNameRange { name: 'uglify-js',
+545 silly addNameRange   range: '>=2.3.0-0 <2.4.0-0',
+545 silly addNameRange   hasData: false }
+546 verbose request where is /optimist
+547 verbose request registry https://registry.npmjs.org/
+548 verbose url raw /optimist
+549 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+550 verbose url resolved https://registry.npmjs.org/optimist
+551 verbose request where is https://registry.npmjs.org/optimist
+552 info trying registry request attempt 1 at 13:37:52
+553 verbose etag "7UXTJLKUM5580M31DFUI1EYZC"
+554 http GET https://registry.npmjs.org/optimist
+555 verbose request where is /uglify-js
+556 verbose request registry https://registry.npmjs.org/
+557 verbose url raw /uglify-js
+558 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+559 verbose url resolved https://registry.npmjs.org/uglify-js
+560 verbose request where is https://registry.npmjs.org/uglify-js
+561 info trying registry request attempt 1 at 13:37:52
+562 verbose etag "13XX7PVSGQ2DX6QO4HNNX3QNV"
+563 http GET https://registry.npmjs.org/uglify-js
+564 silly lockFile 9fcc360f-odules-ember-node-modules-convoy tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/convoy
+565 silly lockFile 9fcc360f-odules-ember-node-modules-convoy tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/convoy
+566 silly lockFile 6c1eec0f-ami-npm-convoy-0-3-2-package-tgz tar:///home/bitnami/.npm/convoy/0.3.2/package.tgz
+567 silly lockFile 6c1eec0f-ami-npm-convoy-0-3-2-package-tgz tar:///home/bitnami/.npm/convoy/0.3.2/package.tgz
+568 info preinstall convoy@0.3.2
+569 http 200 https://registry.npmjs.org/jsdom
+570 silly registry.get cb [ 200,
+570 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+570 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+570 silly registry.get     etag: '"9OAQMX2LDHO1QFWNWPPLABUD3"',
+570 silly registry.get     'content-type': 'application/json',
+570 silly registry.get     'cache-control': 'max-age=60',
+570 silly registry.get     'content-length': '303581',
+570 silly registry.get     'accept-ranges': 'bytes',
+570 silly registry.get     via: '1.1 varnish',
+570 silly registry.get     age: '12',
+570 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+570 silly registry.get     'x-cache': 'HIT',
+570 silly registry.get     'x-cache-hits': '1',
+570 silly registry.get     'x-timer': 'S1414935472.037466,VS0,VE1',
+570 silly registry.get     vary: 'Accept',
+570 silly registry.get     'keep-alive': 'timeout=10, max=50',
+570 silly registry.get     connection: 'Keep-Alive' } ]
+571 verbose readDependencies using package.json deps
+572 verbose readDependencies using package.json deps
+573 silly addNameRange number 2 { name: 'jsdom', range: '>=0.2.14-0 <0.3.0-0', hasData: true }
+574 silly addNameRange versions [ 'jsdom',
+574 silly addNameRange   [ '0.0.1',
+574 silly addNameRange     '0.1.2',
+574 silly addNameRange     '0.1.4',
+574 silly addNameRange     '0.1.5',
+574 silly addNameRange     '0.1.6',
+574 silly addNameRange     '0.1.7',
+574 silly addNameRange     '0.1.8',
+574 silly addNameRange     '0.1.9',
+574 silly addNameRange     '0.1.10',
+574 silly addNameRange     '0.1.11',
+574 silly addNameRange     '0.1.12',
+574 silly addNameRange     '0.1.13',
+574 silly addNameRange     '0.1.15',
+574 silly addNameRange     '0.1.16',
+574 silly addNameRange     '0.1.17',
+574 silly addNameRange     '0.1.18',
+574 silly addNameRange     '0.1.19',
+574 silly addNameRange     '0.1.20',
+574 silly addNameRange     '0.1.21',
+574 silly addNameRange     '0.1.22',
+574 silly addNameRange     '0.1.23',
+574 silly addNameRange     '0.2.0',
+574 silly addNameRange     '0.2.1',
+574 silly addNameRange     '0.2.2',
+574 silly addNameRange     '0.2.3',
+574 silly addNameRange     '0.2.4',
+574 silly addNameRange     '0.2.5',
+574 silly addNameRange     '0.2.6',
+574 silly addNameRange     '0.2.7',
+574 silly addNameRange     '0.2.8',
+574 silly addNameRange     '0.2.9',
+574 silly addNameRange     '0.2.10',
+574 silly addNameRange     '0.2.11',
+574 silly addNameRange     '0.2.12',
+574 silly addNameRange     '0.2.13',
+574 silly addNameRange     '0.2.14',
+574 silly addNameRange     '0.2.15',
+574 silly addNameRange     '0.2.16',
+574 silly addNameRange     '0.2.17',
+574 silly addNameRange     '0.2.18',
+574 silly addNameRange     '0.2.19',
+574 silly addNameRange     '0.3.0',
+574 silly addNameRange     '0.3.1',
+574 silly addNameRange     '0.3.2',
+574 silly addNameRange     '0.3.3',
+574 silly addNameRange     '0.3.4',
+574 silly addNameRange     '0.4.0',
+574 silly addNameRange     '0.4.1',
+574 silly addNameRange     '0.4.2',
+574 silly addNameRange     '0.5.0',
+574 silly addNameRange     '0.5.1',
+574 silly addNameRange     '0.5.2',
+574 silly addNameRange     '0.5.3',
+574 silly addNameRange     '0.5.4',
+574 silly addNameRange     '0.5.5',
+574 silly addNameRange     '0.5.6',
+574 silly addNameRange     '0.5.7',
+574 silly addNameRange     '0.6.0',
+574 silly addNameRange     '0.6.1',
+574 silly addNameRange     '0.6.2',
+574 silly addNameRange     '0.6.3',
+574 silly addNameRange     '0.6.4',
+574 silly addNameRange     '0.6.5',
+574 silly addNameRange     '0.7.0',
+574 silly addNameRange     '0.8.0',
+574 silly addNameRange     '0.8.1',
+574 silly addNameRange     '0.8.2',
+574 silly addNameRange     '0.8.3',
+574 silly addNameRange     '0.8.4',
+574 silly addNameRange     '0.8.5',
+574 silly addNameRange     '0.8.6',
+574 silly addNameRange     '0.8.7',
+574 silly addNameRange     '0.8.8',
+574 silly addNameRange     '0.8.9',
+574 silly addNameRange     '0.8.10',
+574 silly addNameRange     '0.8.11',
+574 silly addNameRange     '0.9.0',
+574 silly addNameRange     '0.10.0',
+574 silly addNameRange     '0.10.1',
+574 silly addNameRange     '0.10.2',
+574 silly addNameRange     '0.10.3',
+574 silly addNameRange     '0.10.4',
+574 silly addNameRange     '0.10.5',
+574 silly addNameRange     '0.10.6',
+574 silly addNameRange     '0.11.0',
+574 silly addNameRange     '0.11.1',
+574 silly addNameRange     '1.0.0-pre.1',
+574 silly addNameRange     '1.0.0-pre.3',
+574 silly addNameRange     '1.0.0-pre.4',
+574 silly addNameRange     '1.0.0-pre.5',
+574 silly addNameRange     '1.0.0-pre.6',
+574 silly addNameRange     '1.0.0-pre.7',
+574 silly addNameRange     '1.0.0',
+574 silly addNameRange     '1.0.1',
+574 silly addNameRange     '1.0.2',
+574 silly addNameRange     '1.0.3',
+574 silly addNameRange     '1.1.0' ] ]
+575 verbose addNamed [ 'jsdom', '0.2.19' ]
+576 verbose addNamed [ '0.2.19', '0.2.19' ]
+577 silly lockFile 37e839c1-jsdom-0-2-19 jsdom@0.2.19
+578 verbose lock jsdom@0.2.19 /home/bitnami/.npm/37e839c1-jsdom-0-2-19.lock
+579 verbose cache add [ 'coffee-script@~1.3', null ]
+580 verbose cache add name=undefined spec="coffee-script@~1.3" args=["coffee-script@~1.3",null]
+581 verbose parsed url { protocol: null,
+581 verbose parsed url   slashes: null,
+581 verbose parsed url   auth: null,
+581 verbose parsed url   host: null,
+581 verbose parsed url   port: null,
+581 verbose parsed url   hostname: null,
+581 verbose parsed url   hash: null,
+581 verbose parsed url   search: null,
+581 verbose parsed url   query: null,
+581 verbose parsed url   pathname: 'coffee-script@~1.3',
+581 verbose parsed url   path: 'coffee-script@~1.3',
+581 verbose parsed url   href: 'coffee-script@~1.3' }
+582 verbose cache add [ 'connect@~2.2', null ]
+583 verbose cache add name=undefined spec="connect@~2.2" args=["connect@~2.2",null]
+584 verbose parsed url { protocol: null,
+584 verbose parsed url   slashes: null,
+584 verbose parsed url   auth: null,
+584 verbose parsed url   host: null,
+584 verbose parsed url   port: null,
+584 verbose parsed url   hostname: null,
+584 verbose parsed url   hash: null,
+584 verbose parsed url   search: null,
+584 verbose parsed url   query: null,
+584 verbose parsed url   pathname: 'connect@~2.2',
+584 verbose parsed url   path: 'connect@~2.2',
+584 verbose parsed url   href: 'connect@~2.2' }
+585 verbose cache add [ 'commander@~0.5', null ]
+586 verbose cache add name=undefined spec="commander@~0.5" args=["commander@~0.5",null]
+587 verbose parsed url { protocol: null,
+587 verbose parsed url   slashes: null,
+587 verbose parsed url   auth: null,
+587 verbose parsed url   host: null,
+587 verbose parsed url   port: null,
+587 verbose parsed url   hostname: null,
+587 verbose parsed url   hash: null,
+587 verbose parsed url   search: null,
+587 verbose parsed url   query: null,
+587 verbose parsed url   pathname: 'commander@~0.5',
+587 verbose parsed url   path: 'commander@~0.5',
+587 verbose parsed url   href: 'commander@~0.5' }
+588 verbose cache add [ 'async@0.1.x', null ]
+589 verbose cache add name=undefined spec="async@0.1.x" args=["async@0.1.x",null]
+590 verbose parsed url { protocol: null,
+590 verbose parsed url   slashes: null,
+590 verbose parsed url   auth: null,
+590 verbose parsed url   host: null,
+590 verbose parsed url   port: null,
+590 verbose parsed url   hostname: null,
+590 verbose parsed url   hash: null,
+590 verbose parsed url   search: null,
+590 verbose parsed url   query: null,
+590 verbose parsed url   pathname: 'async@0.1.x',
+590 verbose parsed url   path: 'async@0.1.x',
+590 verbose parsed url   href: 'async@0.1.x' }
+591 verbose cache add [ 'uglify-js@~1.2', null ]
+592 verbose cache add name=undefined spec="uglify-js@~1.2" args=["uglify-js@~1.2",null]
+593 verbose parsed url { protocol: null,
+593 verbose parsed url   slashes: null,
+593 verbose parsed url   auth: null,
+593 verbose parsed url   host: null,
+593 verbose parsed url   port: null,
+593 verbose parsed url   hostname: null,
+593 verbose parsed url   hash: null,
+593 verbose parsed url   search: null,
+593 verbose parsed url   query: null,
+593 verbose parsed url   pathname: 'uglify-js@~1.2',
+593 verbose parsed url   path: 'uglify-js@~1.2',
+593 verbose parsed url   href: 'uglify-js@~1.2' }
+594 verbose cache add name="coffee-script" spec="~1.3" args=["coffee-script","~1.3"]
+595 verbose parsed url { protocol: null,
+595 verbose parsed url   slashes: null,
+595 verbose parsed url   auth: null,
+595 verbose parsed url   host: null,
+595 verbose parsed url   port: null,
+595 verbose parsed url   hostname: null,
+595 verbose parsed url   hash: null,
+595 verbose parsed url   search: null,
+595 verbose parsed url   query: null,
+595 verbose parsed url   pathname: '~1.3',
+595 verbose parsed url   path: '~1.3',
+595 verbose parsed url   href: '~1.3' }
+596 verbose addNamed [ 'coffee-script', '~1.3' ]
+597 verbose addNamed [ null, '>=1.3.0-0 <1.4.0-0' ]
+598 silly lockFile 0daa0647-coffee-script-1-3 coffee-script@~1.3
+599 verbose lock coffee-script@~1.3 /home/bitnami/.npm/0daa0647-coffee-script-1-3.lock
+600 verbose cache add name="connect" spec="~2.2" args=["connect","~2.2"]
+601 verbose parsed url { protocol: null,
+601 verbose parsed url   slashes: null,
+601 verbose parsed url   auth: null,
+601 verbose parsed url   host: null,
+601 verbose parsed url   port: null,
+601 verbose parsed url   hostname: null,
+601 verbose parsed url   hash: null,
+601 verbose parsed url   search: null,
+601 verbose parsed url   query: null,
+601 verbose parsed url   pathname: '~2.2',
+601 verbose parsed url   path: '~2.2',
+601 verbose parsed url   href: '~2.2' }
+602 verbose addNamed [ 'connect', '~2.2' ]
+603 verbose addNamed [ null, '>=2.2.0-0 <2.3.0-0' ]
+604 silly lockFile 71b9c0a9-connect-2-2 connect@~2.2
+605 verbose lock connect@~2.2 /home/bitnami/.npm/71b9c0a9-connect-2-2.lock
+606 verbose cache add name="commander" spec="~0.5" args=["commander","~0.5"]
+607 verbose parsed url { protocol: null,
+607 verbose parsed url   slashes: null,
+607 verbose parsed url   auth: null,
+607 verbose parsed url   host: null,
+607 verbose parsed url   port: null,
+607 verbose parsed url   hostname: null,
+607 verbose parsed url   hash: null,
+607 verbose parsed url   search: null,
+607 verbose parsed url   query: null,
+607 verbose parsed url   pathname: '~0.5',
+607 verbose parsed url   path: '~0.5',
+607 verbose parsed url   href: '~0.5' }
+608 verbose addNamed [ 'commander', '~0.5' ]
+609 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+610 silly lockFile 7444f370-commander-0-5 commander@~0.5
+611 verbose lock commander@~0.5 /home/bitnami/.npm/7444f370-commander-0-5.lock
+612 verbose cache add name="async" spec="0.1.x" args=["async","0.1.x"]
+613 verbose parsed url { protocol: null,
+613 verbose parsed url   slashes: null,
+613 verbose parsed url   auth: null,
+613 verbose parsed url   host: null,
+613 verbose parsed url   port: null,
+613 verbose parsed url   hostname: null,
+613 verbose parsed url   hash: null,
+613 verbose parsed url   search: null,
+613 verbose parsed url   query: null,
+613 verbose parsed url   pathname: '0.1.x',
+613 verbose parsed url   path: '0.1.x',
+613 verbose parsed url   href: '0.1.x' }
+614 verbose addNamed [ 'async', '0.1.x' ]
+615 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+616 silly lockFile 463e1c03-async-0-1-x async@0.1.x
+617 verbose lock async@0.1.x /home/bitnami/.npm/463e1c03-async-0-1-x.lock
+618 verbose cache add name="uglify-js" spec="~1.2" args=["uglify-js","~1.2"]
+619 verbose parsed url { protocol: null,
+619 verbose parsed url   slashes: null,
+619 verbose parsed url   auth: null,
+619 verbose parsed url   host: null,
+619 verbose parsed url   port: null,
+619 verbose parsed url   hostname: null,
+619 verbose parsed url   hash: null,
+619 verbose parsed url   search: null,
+619 verbose parsed url   query: null,
+619 verbose parsed url   pathname: '~1.2',
+619 verbose parsed url   path: '~1.2',
+619 verbose parsed url   href: '~1.2' }
+620 verbose addNamed [ 'uglify-js', '~1.2' ]
+621 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+622 silly lockFile 44a8c921-uglify-js-1-2 uglify-js@~1.2
+623 verbose lock uglify-js@~1.2 /home/bitnami/.npm/44a8c921-uglify-js-1-2.lock
+624 verbose cache add [ 'glob@~3.1', null ]
+625 verbose cache add name=undefined spec="glob@~3.1" args=["glob@~3.1",null]
+626 verbose parsed url { protocol: null,
+626 verbose parsed url   slashes: null,
+626 verbose parsed url   auth: null,
+626 verbose parsed url   host: null,
+626 verbose parsed url   port: null,
+626 verbose parsed url   hostname: null,
+626 verbose parsed url   hash: null,
+626 verbose parsed url   search: null,
+626 verbose parsed url   query: null,
+626 verbose parsed url   pathname: 'glob@~3.1',
+626 verbose parsed url   path: 'glob@~3.1',
+626 verbose parsed url   href: 'glob@~3.1' }
+627 verbose cache add [ 'mime@~1.2', null ]
+628 verbose cache add name=undefined spec="mime@~1.2" args=["mime@~1.2",null]
+629 verbose parsed url { protocol: null,
+629 verbose parsed url   slashes: null,
+629 verbose parsed url   auth: null,
+629 verbose parsed url   host: null,
+629 verbose parsed url   port: null,
+629 verbose parsed url   hostname: null,
+629 verbose parsed url   hash: null,
+629 verbose parsed url   search: null,
+629 verbose parsed url   query: null,
+629 verbose parsed url   pathname: 'mime@~1.2',
+629 verbose parsed url   path: 'mime@~1.2',
+629 verbose parsed url   href: 'mime@~1.2' }
+630 verbose cache add name="glob" spec="~3.1" args=["glob","~3.1"]
+631 verbose parsed url { protocol: null,
+631 verbose parsed url   slashes: null,
+631 verbose parsed url   auth: null,
+631 verbose parsed url   host: null,
+631 verbose parsed url   port: null,
+631 verbose parsed url   hostname: null,
+631 verbose parsed url   hash: null,
+631 verbose parsed url   search: null,
+631 verbose parsed url   query: null,
+631 verbose parsed url   pathname: '~3.1',
+631 verbose parsed url   path: '~3.1',
+631 verbose parsed url   href: '~3.1' }
+632 verbose addNamed [ 'glob', '~3.1' ]
+633 verbose addNamed [ null, '>=3.1.0-0 <3.2.0-0' ]
+634 silly lockFile 16f79fce-glob-3-1 glob@~3.1
+635 verbose lock glob@~3.1 /home/bitnami/.npm/16f79fce-glob-3-1.lock
+636 verbose cache add name="mime" spec="~1.2" args=["mime","~1.2"]
+637 verbose parsed url { protocol: null,
+637 verbose parsed url   slashes: null,
+637 verbose parsed url   auth: null,
+637 verbose parsed url   host: null,
+637 verbose parsed url   port: null,
+637 verbose parsed url   hostname: null,
+637 verbose parsed url   hash: null,
+637 verbose parsed url   search: null,
+637 verbose parsed url   query: null,
+637 verbose parsed url   pathname: '~1.2',
+637 verbose parsed url   path: '~1.2',
+637 verbose parsed url   href: '~1.2' }
+638 verbose addNamed [ 'mime', '~1.2' ]
+639 verbose addNamed [ null, '>=1.2.0-0 <1.3.0-0' ]
+640 silly lockFile f7091508-mime-1-2 mime@~1.2
+641 verbose lock mime@~1.2 /home/bitnami/.npm/f7091508-mime-1-2.lock
+642 http 200 https://registry.npmjs.org/htmlparser
+643 silly registry.get cb [ 200,
+643 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+643 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+643 silly registry.get     etag: '"49WEGJF6N891JIXI1J0HDGWN3"',
+643 silly registry.get     'content-type': 'application/json',
+643 silly registry.get     'cache-control': 'max-age=60',
+643 silly registry.get     'content-length': '16238',
+643 silly registry.get     'accept-ranges': 'bytes',
+643 silly registry.get     via: '1.1 varnish',
+643 silly registry.get     age: '0',
+643 silly registry.get     'x-served-by': 'cache-lcy1130-LCY',
+643 silly registry.get     'x-cache': 'MISS',
+643 silly registry.get     'x-cache-hits': '0',
+643 silly registry.get     'x-timer': 'S1414935472.036726,VS0,VE152',
+643 silly registry.get     vary: 'Accept',
+643 silly registry.get     'keep-alive': 'timeout=10, max=50',
+643 silly registry.get     connection: 'Keep-Alive' } ]
+644 silly lockFile 97e0bca7-npmjs-org-jsdom-jsdom-0-2-19-tgz https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+645 verbose lock https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz /home/bitnami/.npm/97e0bca7-npmjs-org-jsdom-jsdom-0-2-19-tgz.lock
+646 silly addNameRange { name: 'coffee-script',
+646 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+646 silly addNameRange   hasData: false }
+647 silly addNameRange { name: 'connect', range: '>=2.2.0-0 <2.3.0-0', hasData: false }
+648 silly addNameRange { name: 'commander',
+648 silly addNameRange   range: '>=0.5.0-0 <0.6.0-0',
+648 silly addNameRange   hasData: false }
+649 silly addNameRange { name: 'async', range: '>=0.1.0-0 <0.2.0-0', hasData: false }
+650 silly addNameRange { name: 'uglify-js',
+650 silly addNameRange   range: '>=1.2.0-0 <1.3.0-0',
+650 silly addNameRange   hasData: false }
+651 silly addNameRange { name: 'glob', range: '>=3.1.0-0 <3.2.0-0', hasData: false }
+652 silly addNameRange { name: 'mime', range: '>=1.2.0-0 <1.3.0-0', hasData: false }
+653 verbose addRemoteTarball [ 'https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz',
+653 verbose addRemoteTarball   'c0811df73901289ea6a0c825c7bb0c09c8c88629' ]
+654 info retry fetch attempt 1 at 13:37:52
+655 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+656 verbose request where is /uglify-js
+657 verbose request registry https://registry.npmjs.org/
+658 verbose url raw /uglify-js
+659 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js' ]
+660 verbose url resolved https://registry.npmjs.org/uglify-js
+661 verbose request where is https://registry.npmjs.org/uglify-js
+662 info trying registry request attempt 1 at 13:37:52
+663 verbose etag "13XX7PVSGQ2DX6QO4HNNX3QNV"
+664 http GET https://registry.npmjs.org/uglify-js
+665 verbose request where is /coffee-script
+666 verbose request registry https://registry.npmjs.org/
+667 verbose url raw /coffee-script
+668 verbose url resolving [ 'https://registry.npmjs.org/', './coffee-script' ]
+669 verbose url resolved https://registry.npmjs.org/coffee-script
+670 verbose request where is https://registry.npmjs.org/coffee-script
+671 info trying registry request attempt 1 at 13:37:52
+672 verbose etag "CQS5CH60OCCSAVZFPZFY9BRZK"
+673 http GET https://registry.npmjs.org/coffee-script
+674 verbose request where is /commander
+675 verbose request registry https://registry.npmjs.org/
+676 verbose url raw /commander
+677 verbose url resolving [ 'https://registry.npmjs.org/', './commander' ]
+678 verbose url resolved https://registry.npmjs.org/commander
+679 verbose request where is https://registry.npmjs.org/commander
+680 info trying registry request attempt 1 at 13:37:52
+681 verbose etag "5LA0A6333SD0W0TSTEA8392S5"
+682 http GET https://registry.npmjs.org/commander
+683 verbose request where is /connect
+684 verbose request registry https://registry.npmjs.org/
+685 verbose url raw /connect
+686 verbose url resolving [ 'https://registry.npmjs.org/', './connect' ]
+687 verbose url resolved https://registry.npmjs.org/connect
+688 verbose request where is https://registry.npmjs.org/connect
+689 info trying registry request attempt 1 at 13:37:52
+690 verbose etag "28V7RJS8W97OJI0C41OQ52WZH"
+691 http GET https://registry.npmjs.org/connect
+692 http GET https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+693 verbose request where is /async
+694 verbose request registry https://registry.npmjs.org/
+695 verbose url raw /async
+696 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+697 verbose url resolved https://registry.npmjs.org/async
+698 verbose request where is https://registry.npmjs.org/async
+699 info trying registry request attempt 1 at 13:37:52
+700 verbose etag "53A92U2IL1BE76MYKQEXVGAG1"
+701 http GET https://registry.npmjs.org/async
+702 verbose request where is /glob
+703 verbose request registry https://registry.npmjs.org/
+704 verbose url raw /glob
+705 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+706 verbose url resolved https://registry.npmjs.org/glob
+707 verbose request where is https://registry.npmjs.org/glob
+708 info trying registry request attempt 1 at 13:37:52
+709 verbose etag "YVVOYS7EUF19W7GET05G81FZ"
+710 http GET https://registry.npmjs.org/glob
+711 verbose request where is /mime
+712 verbose request registry https://registry.npmjs.org/
+713 verbose url raw /mime
+714 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+715 verbose url resolved https://registry.npmjs.org/mime
+716 verbose request where is https://registry.npmjs.org/mime
+717 info trying registry request attempt 1 at 13:37:52
+718 verbose etag "9SQMRID0SFDWKUINX2BZ7BN44"
+719 http GET https://registry.npmjs.org/mime
+720 silly lockFile fb78c9e1--htmlparser-htmlparser-1-7-6-tgz https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+721 verbose lock https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz /home/bitnami/.npm/fb78c9e1--htmlparser-htmlparser-1-7-6-tgz.lock
+722 http 304 https://registry.npmjs.org/uglify-js
+723 silly registry.get cb [ 304,
+723 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+723 silly registry.get     server: 'Apache',
+723 silly registry.get     via: '1.1 varnish',
+723 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+723 silly registry.get     'cache-control': 'max-age=60',
+723 silly registry.get     etag: '"13XX7PVSGQ2DX6QO4HNNX3QNV"',
+723 silly registry.get     age: '21',
+723 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+723 silly registry.get     'x-cache': 'HIT',
+723 silly registry.get     'x-cache-hits': '1',
+723 silly registry.get     'x-timer': 'S1414935472.237399,VS0,VE0',
+723 silly registry.get     vary: 'Accept',
+723 silly registry.get     'content-length': '0',
+723 silly registry.get     'keep-alive': 'timeout=10, max=50',
+723 silly registry.get     connection: 'Keep-Alive' } ]
+724 verbose etag https://registry.npmjs.org/uglify-js from cache
+725 verbose addRemoteTarball [ 'https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz',
+725 verbose addRemoteTarball   '6a263c7ee5930f3e5c56fa564011f99e49f80d34' ]
+726 info retry fetch attempt 1 at 13:37:52
+727 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+728 http GET https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+729 silly addNameRange number 2 { name: 'uglify-js', range: '>=2.3.0-0 <2.4.0-0', hasData: true }
+730 silly addNameRange versions [ 'uglify-js',
+730 silly addNameRange   [ '0.0.1',
+730 silly addNameRange     '0.0.2',
+730 silly addNameRange     '0.0.3',
+730 silly addNameRange     '0.0.4',
+730 silly addNameRange     '0.0.5',
+730 silly addNameRange     '1.0.1',
+730 silly addNameRange     '1.0.2',
+730 silly addNameRange     '1.0.3',
+730 silly addNameRange     '1.0.4',
+730 silly addNameRange     '1.0.5',
+730 silly addNameRange     '1.0.6',
+730 silly addNameRange     '1.0.7',
+730 silly addNameRange     '1.1.0',
+730 silly addNameRange     '1.1.1',
+730 silly addNameRange     '1.2.0',
+730 silly addNameRange     '1.2.1',
+730 silly addNameRange     '1.2.2',
+730 silly addNameRange     '1.2.3',
+730 silly addNameRange     '1.2.4',
+730 silly addNameRange     '1.2.5',
+730 silly addNameRange     '1.2.6',
+730 silly addNameRange     '1.3.0',
+730 silly addNameRange     '1.3.1',
+730 silly addNameRange     '1.3.2',
+730 silly addNameRange     '1.3.3',
+730 silly addNameRange     '1.3.4',
+730 silly addNameRange     '2.2.0',
+730 silly addNameRange     '2.2.1',
+730 silly addNameRange     '2.2.2',
+730 silly addNameRange     '2.2.3',
+730 silly addNameRange     '2.2.4',
+730 silly addNameRange     '2.2.5',
+730 silly addNameRange     '2.3.0',
+730 silly addNameRange     '2.3.1',
+730 silly addNameRange     '2.3.2',
+730 silly addNameRange     '2.3.3',
+730 silly addNameRange     '2.3.4',
+730 silly addNameRange     '2.3.5',
+730 silly addNameRange     '2.3.6',
+730 silly addNameRange     '1.3.5',
+730 silly addNameRange     '2.4.0',
+730 silly addNameRange     '2.4.1',
+730 silly addNameRange     '2.4.2',
+730 silly addNameRange     '2.4.3',
+730 silly addNameRange     '2.4.4',
+730 silly addNameRange     '2.4.5',
+730 silly addNameRange     '2.4.6',
+730 silly addNameRange     '2.4.7',
+730 silly addNameRange     '2.4.8',
+730 silly addNameRange     '2.4.9',
+730 silly addNameRange     '2.4.10',
+730 silly addNameRange     '2.4.11',
+730 silly addNameRange     '2.4.12',
+730 silly addNameRange     '2.4.13',
+730 silly addNameRange     '2.4.14',
+730 silly addNameRange     '2.4.15' ] ]
+731 verbose addNamed [ 'uglify-js', '2.3.6' ]
+732 verbose addNamed [ '2.3.6', '2.3.6' ]
+733 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+734 verbose lock uglify-js@2.3.6 /home/bitnami/.npm/a40be02f-uglify-js-2-3-6.lock
+735 http 200 https://registry.npmjs.org/optimist
+736 silly registry.get cb [ 200,
+736 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+736 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+736 silly registry.get     etag: '"15DZWBUEOTFWFOGQ6GU58V6MI"',
+736 silly registry.get     'content-type': 'application/json',
+736 silly registry.get     'cache-control': 'max-age=60',
+736 silly registry.get     'content-length': '48112',
+736 silly registry.get     'accept-ranges': 'bytes',
+736 silly registry.get     via: '1.1 varnish',
+736 silly registry.get     age: '43',
+736 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+736 silly registry.get     'x-cache': 'HIT',
+736 silly registry.get     'x-cache-hits': '2',
+736 silly registry.get     'x-timer': 'S1414935472.227104,VS0,VE0',
+736 silly registry.get     vary: 'Accept',
+736 silly registry.get     'keep-alive': 'timeout=10, max=50',
+736 silly registry.get     connection: 'Keep-Alive' } ]
+737 http 304 https://registry.npmjs.org/connect
+738 silly registry.get cb [ 304,
+738 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+738 silly registry.get     server: 'Apache',
+738 silly registry.get     via: '1.1 varnish',
+738 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+738 silly registry.get     'cache-control': 'max-age=60',
+738 silly registry.get     etag: '"28V7RJS8W97OJI0C41OQ52WZH"',
+738 silly registry.get     age: '13',
+738 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+738 silly registry.get     'x-cache': 'HIT',
+738 silly registry.get     'x-cache-hits': '1',
+738 silly registry.get     'x-timer': 'S1414935472.254039,VS0,VE1',
+738 silly registry.get     vary: 'Accept',
+738 silly registry.get     'content-length': '0',
+738 silly registry.get     'keep-alive': 'timeout=10, max=49',
+738 silly registry.get     connection: 'Keep-Alive' } ]
+739 verbose etag https://registry.npmjs.org/connect from cache
+740 silly lockFile 0b408832-rg-uglify-js-uglify-js-2-3-6-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+741 verbose lock https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz /home/bitnami/.npm/0b408832-rg-uglify-js-uglify-js-2-3-6-tgz.lock
+742 verbose addRemoteTarball [ 'https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz',
+742 verbose addRemoteTarball   'fa0984770b428b7a9b2a8058f46355d14fef211a' ]
+743 silly addNameRange number 2 { name: 'optimist', range: '>=0.3.0-0 <0.4.0-0', hasData: true }
+744 silly addNameRange versions [ 'optimist',
+744 silly addNameRange   [ '0.0.1',
+744 silly addNameRange     '0.0.2',
+744 silly addNameRange     '0.0.4',
+744 silly addNameRange     '0.0.5',
+744 silly addNameRange     '0.0.6',
+744 silly addNameRange     '0.0.7',
+744 silly addNameRange     '0.1.0',
+744 silly addNameRange     '0.1.1',
+744 silly addNameRange     '0.1.2',
+744 silly addNameRange     '0.1.3',
+744 silly addNameRange     '0.1.4',
+744 silly addNameRange     '0.1.5',
+744 silly addNameRange     '0.1.6',
+744 silly addNameRange     '0.1.7',
+744 silly addNameRange     '0.1.8',
+744 silly addNameRange     '0.1.9',
+744 silly addNameRange     '0.0.3',
+744 silly addNameRange     '0.2.0',
+744 silly addNameRange     '0.2.1',
+744 silly addNameRange     '0.2.2',
+744 silly addNameRange     '0.2.3',
+744 silly addNameRange     '0.2.4',
+744 silly addNameRange     '0.2.5',
+744 silly addNameRange     '0.2.6',
+744 silly addNameRange     '0.2.7',
+744 silly addNameRange     '0.2.8',
+744 silly addNameRange     '0.3.0',
+744 silly addNameRange     '0.3.1',
+744 silly addNameRange     '0.3.3',
+744 silly addNameRange     '0.3.4',
+744 silly addNameRange     '0.3.5',
+744 silly addNameRange     '0.3.6',
+744 silly addNameRange     '0.3.7',
+744 silly addNameRange     '0.4.0',
+744 silly addNameRange     '0.5.0',
+744 silly addNameRange     '0.5.1',
+744 silly addNameRange     '0.5.2',
+744 silly addNameRange     '0.6.0',
+744 silly addNameRange     '0.6.1' ] ]
+745 verbose addNamed [ 'optimist', '0.3.7' ]
+746 verbose addNamed [ '0.3.7', '0.3.7' ]
+747 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+748 verbose lock optimist@0.3.7 /home/bitnami/.npm/090e1d8d-optimist-0-3-7.lock
+749 info retry fetch attempt 1 at 13:37:52
+750 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+751 http GET https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+752 http 304 https://registry.npmjs.org/glob
+753 silly registry.get cb [ 304,
+753 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+753 silly registry.get     server: 'Apache',
+753 silly registry.get     via: '1.1 varnish',
+753 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+753 silly registry.get     'cache-control': 'max-age=60',
+753 silly registry.get     etag: '"YVVOYS7EUF19W7GET05G81FZ"',
+753 silly registry.get     age: '42',
+753 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+753 silly registry.get     'x-cache': 'HIT',
+753 silly registry.get     'x-cache-hits': '1',
+753 silly registry.get     'x-timer': 'S1414935472.268160,VS0,VE0',
+753 silly registry.get     vary: 'Accept',
+753 silly registry.get     'content-length': '0',
+753 silly registry.get     'keep-alive': 'timeout=10, max=48',
+753 silly registry.get     connection: 'Keep-Alive' } ]
+754 verbose etag https://registry.npmjs.org/glob from cache
+755 silly addNameRange number 2 { name: 'connect', range: '>=2.2.0-0 <2.3.0-0', hasData: true }
+756 silly addNameRange versions [ 'connect',
+756 silly addNameRange   [ '0.0.1',
+756 silly addNameRange     '0.0.2',
+756 silly addNameRange     '0.0.3',
+756 silly addNameRange     '0.0.4',
+756 silly addNameRange     '0.0.5',
+756 silly addNameRange     '0.0.6',
+756 silly addNameRange     '0.1.0',
+756 silly addNameRange     '0.2.0',
+756 silly addNameRange     '0.2.1',
+756 silly addNameRange     '0.2.2',
+756 silly addNameRange     '0.2.3',
+756 silly addNameRange     '0.2.4',
+756 silly addNameRange     '0.2.5',
+756 silly addNameRange     '0.2.6',
+756 silly addNameRange     '0.2.7',
+756 silly addNameRange     '0.3.0',
+756 silly addNameRange     '0.4.0',
+756 silly addNameRange     '0.5.0',
+756 silly addNameRange     '0.5.1',
+756 silly addNameRange     '0.5.2',
+756 silly addNameRange     '0.5.3',
+756 silly addNameRange     '0.5.4',
+756 silly addNameRange     '0.5.5',
+756 silly addNameRange     '0.5.6',
+756 silly addNameRange     '0.5.7',
+756 silly addNameRange     '0.5.8',
+756 silly addNameRange     '0.5.9',
+756 silly addNameRange     '0.5.10',
+756 silly addNameRange     '1.0.0',
+756 silly addNameRange     '1.0.1',
+756 silly addNameRange     '1.0.2',
+756 silly addNameRange     '1.0.3',
+756 silly addNameRange     '1.0.4',
+756 silly addNameRange     '1.0.5',
+756 silly addNameRange     '1.0.6',
+756 silly addNameRange     '1.1.0',
+756 silly addNameRange     '1.1.1',
+756 silly addNameRange     '1.1.2',
+756 silly addNameRange     '1.1.3',
+756 silly addNameRange     '1.1.4',
+756 silly addNameRange     '1.1.5',
+756 silly addNameRange     '1.2.0',
+756 silly addNameRange     '1.2.1',
+756 silly addNameRange     '1.2.2',
+756 silly addNameRange     '1.2.3',
+756 silly addNameRange     '1.3.0',
+756 silly addNameRange     '1.4.0',
+756 silly addNameRange     '1.4.1',
+756 silly addNameRange     '1.4.2',
+756 silly addNameRange     '1.4.3',
+756 silly addNameRange     '1.4.4',
+756 silly addNameRange     '1.4.5',
+756 silly addNameRange     '1.4.6',
+756 silly addNameRange     '1.5.0',
+756 silly addNameRange     '1.5.1',
+756 silly addNameRange     '1.5.2',
+756 silly addNameRange     '1.6.0',
+756 silly addNameRange     '1.6.1',
+756 silly addNameRange     '1.6.2',
+756 silly addNameRange     '1.6.3',
+756 silly addNameRange     '1.6.4',
+756 silly addNameRange     '1.7.0',
+756 silly addNameRange     '1.7.1',
+756 silly addNameRange     '1.7.2',
+756 silly addNameRange     '1.7.3',
+756 silly addNameRange     '1.8.0',
+756 silly addNameRange     '1.8.1',
+756 silly addNameRange     '1.8.2',
+756 silly addNameRange     '1.8.3',
+756 silly addNameRange     '1.8.4',
+756 silly addNameRange     '1.8.5',
+756 silly addNameRange     '2.0.0',
+756 silly addNameRange     '2.0.1',
+756 silly addNameRange     '2.0.2',
+756 silly addNameRange     '2.0.3',
+756 silly addNameRange     '1.8.6',
+756 silly addNameRange     '2.1.0',
+756 silly addNameRange     '2.1.1',
+756 silly addNameRange     '2.1.2',
+756 silly addNameRange     '1.8.7',
+756 silly addNameRange     '2.1.3',
+756 silly addNameRange     '2.2.0',
+756 silly addNameRange     '2.2.1',
+756 silly addNameRange     '2.2.2',
+756 silly addNameRange     '2.3.0',
+756 silly addNameRange     '2.3.1',
+756 silly addNameRange     '2.3.2',
+756 silly addNameRange     '2.3.3',
+756 silly addNameRange     '1.9.0',
+756 silly addNameRange     '1.9.1',
+756 silly addNameRange     '2.3.4',
+756 silly addNameRange     '2.3.5',
+756 silly addNameRange     '2.3.6',
+756 silly addNameRange     '2.3.7',
+756 silly addNameRange     '1.9.2',
+756 silly addNameRange     '2.3.8',
+756 silly addNameRange     '2.3.9',
+756 silly addNameRange     '2.4.0',
+756 silly addNameRange     '2.4.1',
+756 silly addNameRange     '2.4.2',
+756 silly addNameRange     '2.4.3',
+756 silly addNameRange     '2.4.4',
+756 silly addNameRange     '2.4.5',
+756 silly addNameRange     '2.4.6',
+756 silly addNameRange     '2.5.0',
+756 silly addNameRange     '2.6.0',
+756 silly addNameRange     '2.6.1',
+756 silly addNameRange     '2.6.2',
+756 silly addNameRange     '2.7.0',
+756 silly addNameRange     '2.7.1',
+756 silly addNameRange     '2.7.2',
+756 silly addNameRange     '2.7.3',
+756 silly addNameRange     '2.7.4',
+756 silly addNameRange     '2.7.5',
+756 silly addNameRange     '2.7.6',
+756 silly addNameRange     '2.7.7',
+756 silly addNameRange     '2.7.8',
+756 silly addNameRange     '2.7.9',
+756 silly addNameRange     '2.7.10',
+756 silly addNameRange     '2.7.11',
+756 silly addNameRange     '2.8.0',
+756 silly addNameRange     '2.8.1',
+756 silly addNameRange     '2.8.2',
+756 silly addNameRange     '2.8.3',
+756 silly addNameRange     '2.8.4',
+756 silly addNameRange     '2.8.5',
+756 silly addNameRange     '2.8.6',
+756 silly addNameRange     '2.8.7',
+756 silly addNameRange     '2.8.8',
+756 silly addNameRange     '2.9.0',
+756 silly addNameRange     '2.9.1',
+756 silly addNameRange     '2.9.2',
+756 silly addNameRange     '2.10.0',
+756 silly addNameRange     '2.10.1',
+756 silly addNameRange     '2.11.0',
+756 silly addNameRange     '2.11.1',
+756 silly addNameRange     '2.11.2',
+756 silly addNameRange     '2.12.0',
+756 silly addNameRange     '2.13.0',
+756 silly addNameRange     '2.13.1',
+756 silly addNameRange     '2.14.0',
+756 silly addNameRange     '2.14.1',
+756 silly addNameRange     '3.0.0-rc.1',
+756 silly addNameRange     '2.14.2',
+756 silly addNameRange     '2.14.3',
+756 silly addNameRange     '2.14.4',
+756 silly addNameRange     '2.14.5',
+756 silly addNameRange     '2.15.0',
+756 silly addNameRange     '3.0.0-rc.2',
+756 silly addNameRange     '2.16.0',
+756 silly addNameRange     '2.16.1',
+756 silly addNameRange     '2.16.2',
+756 silly addNameRange     '2.17.0',
+756 silly addNameRange     '2.17.1',
+756 silly addNameRange     '2.17.2',
+756 silly addNameRange     '2.17.3',
+756 silly addNameRange     '2.18.0',
+756 silly addNameRange     '3.0.0',
+756 silly addNameRange     '2.19.0',
+756 silly addNameRange     '2.19.1',
+756 silly addNameRange     '2.19.2',
+756 silly addNameRange     '2.19.3',
+756 silly addNameRange     '2.19.4',
+756 silly addNameRange     '2.19.5',
+756 silly addNameRange     '2.19.6',
+756 silly addNameRange     '2.20.0',
+756 silly addNameRange     '2.20.1',
+756 silly addNameRange     '2.20.2',
+756 silly addNameRange     '3.0.1',
+756 silly addNameRange     '2.21.0',
+756 silly addNameRange     '2.21.1',
+756 silly addNameRange     '2.22.0',
+756 silly addNameRange     '2.23.0',
+756 silly addNameRange     '3.0.2',
+756 silly addNameRange     '2.24.0',
+756 silly addNameRange     '3.1.0',
+756 silly addNameRange     '2.24.1',
+756 silly addNameRange     '2.24.2',
+756 silly addNameRange     '2.24.3',
+756 silly addNameRange     '2.25.0',
+756 silly addNameRange     '2.25.1',
+756 silly addNameRange     '2.25.2',
+756 silly addNameRange     '2.25.3',
+756 silly addNameRange     '2.25.4',
+756 silly addNameRange     '3.1.1',
+756 silly addNameRange     '2.25.5',
+756 silly addNameRange     '2.25.6',
+756 silly addNameRange     '2.25.7',
+756 silly addNameRange     '2.25.8',
+756 silly addNameRange     '2.25.9',
+756 silly addNameRange     '2.25.10',
+756 silly addNameRange     '2.26.0',
+756 silly addNameRange     '3.2.0',
+756 silly addNameRange     '2.26.1',
+756 silly addNameRange     '2.26.2',
+756 silly addNameRange     '2.26.3',
+756 silly addNameRange     '2.26.4',
+756 silly addNameRange     '2.26.5',
+756 silly addNameRange     '2.26.6',
+756 silly addNameRange     '2.27.0',
+756 silly addNameRange     '3.3.0',
+756 silly addNameRange     '2.27.1',
+756 silly addNameRange     '3.3.1',
+756 silly addNameRange     '2.27.2',
+756 silly addNameRange     '3.3.2' ] ]
+757 verbose addNamed [ 'connect', '2.2.2' ]
+758 verbose addNamed [ '2.2.2', '2.2.2' ]
+759 silly lockFile fa3f39c5-connect-2-2-2 connect@2.2.2
+760 verbose lock connect@2.2.2 /home/bitnami/.npm/fa3f39c5-connect-2-2-2.lock
+761 http 304 https://registry.npmjs.org/mime
+762 silly registry.get cb [ 304,
+762 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+762 silly registry.get     server: 'Apache',
+762 silly registry.get     via: '1.1 varnish',
+762 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+762 silly registry.get     'cache-control': 'max-age=60',
+762 silly registry.get     etag: '"9SQMRID0SFDWKUINX2BZ7BN44"',
+762 silly registry.get     age: '32',
+762 silly registry.get     'x-served-by': 'cache-lcy1121-LCY',
+762 silly registry.get     'x-cache': 'HIT',
+762 silly registry.get     'x-cache-hits': '1',
+762 silly registry.get     'x-timer': 'S1414935472.286126,VS0,VE0',
+762 silly registry.get     vary: 'Accept',
+762 silly registry.get     'content-length': '0',
+762 silly registry.get     'keep-alive': 'timeout=10, max=47',
+762 silly registry.get     connection: 'Keep-Alive' } ]
+763 verbose etag https://registry.npmjs.org/mime from cache
+764 http 200 https://registry.npmjs.org/async
+765 silly registry.get cb [ 200,
+765 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+765 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+765 silly registry.get     etag: '"B46VKF7T7WH6XDWLV0UPX2QCY"',
+765 silly registry.get     'content-type': 'application/json',
+765 silly registry.get     'cache-control': 'max-age=60',
+765 silly registry.get     'content-length': '105849',
+765 silly registry.get     'accept-ranges': 'bytes',
+765 silly registry.get     via: '1.1 varnish',
+765 silly registry.get     age: '22',
+765 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+765 silly registry.get     'x-cache': 'HIT',
+765 silly registry.get     'x-cache-hits': '1',
+765 silly registry.get     'x-timer': 'S1414935472.266959,VS0,VE0',
+765 silly registry.get     vary: 'Accept',
+765 silly registry.get     'keep-alive': 'timeout=10, max=49',
+765 silly registry.get     connection: 'Keep-Alive' } ]
+766 silly lockFile ad3c167b-js-org-connect-connect-2-2-2-tgz https://registry.npmjs.org/connect/-/connect-2.2.2.tgz
+767 verbose lock https://registry.npmjs.org/connect/-/connect-2.2.2.tgz /home/bitnami/.npm/ad3c167b-js-org-connect-connect-2-2-2-tgz.lock
+768 verbose addRemoteTarball [ 'https://registry.npmjs.org/connect/-/connect-2.2.2.tgz',
+768 verbose addRemoteTarball   'd650f4c457f9a76a975551318967e50e0fdfe948' ]
+769 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+770 silly lockFile 090e1d8d-optimist-0-3-7 optimist@0.3.7
+771 silly addNameRange number 2 { name: 'glob', range: '>=3.1.0-0 <3.2.0-0', hasData: true }
+772 silly addNameRange versions [ 'glob',
+772 silly addNameRange   [ '1.1.0',
+772 silly addNameRange     '2.0.9',
+772 silly addNameRange     '2.0.8',
+772 silly addNameRange     '2.0.7',
+772 silly addNameRange     '2.1.0',
+772 silly addNameRange     '3.0.0',
+772 silly addNameRange     '3.0.1',
+772 silly addNameRange     '3.1.0',
+772 silly addNameRange     '3.1.1',
+772 silly addNameRange     '3.1.2',
+772 silly addNameRange     '3.1.3',
+772 silly addNameRange     '3.1.4',
+772 silly addNameRange     '3.1.5',
+772 silly addNameRange     '3.1.6',
+772 silly addNameRange     '3.1.7',
+772 silly addNameRange     '3.1.9',
+772 silly addNameRange     '3.1.10',
+772 silly addNameRange     '3.1.11',
+772 silly addNameRange     '3.1.12',
+772 silly addNameRange     '3.1.13',
+772 silly addNameRange     '3.1.14',
+772 silly addNameRange     '3.1.15',
+772 silly addNameRange     '3.1.16',
+772 silly addNameRange     '3.1.17',
+772 silly addNameRange     '3.1.18',
+772 silly addNameRange     '3.1.19',
+772 silly addNameRange     '3.1.20',
+772 silly addNameRange     '3.1.21',
+772 silly addNameRange     '3.2.0',
+772 silly addNameRange     '3.2.1',
+772 silly addNameRange     '3.2.3',
+772 silly addNameRange     '3.2.4',
+772 silly addNameRange     '3.2.5',
+772 silly addNameRange     '3.2.6',
+772 silly addNameRange     '3.2.7',
+772 silly addNameRange     '3.2.8',
+772 silly addNameRange     '3.2.9',
+772 silly addNameRange     '3.2.10',
+772 silly addNameRange     '3.2.11',
+772 silly addNameRange     '4.0.0',
+772 silly addNameRange     '4.0.1',
+772 silly addNameRange     '4.0.2',
+772 silly addNameRange     '4.0.3',
+772 silly addNameRange     '4.0.4',
+772 silly addNameRange     '4.0.5',
+772 silly addNameRange     '4.0.6' ] ]
+773 verbose addNamed [ 'glob', '3.1.21' ]
+774 verbose addNamed [ '3.1.21', '3.1.21' ]
+775 silly lockFile ab465912-glob-3-1-21 glob@3.1.21
+776 verbose lock glob@3.1.21 /home/bitnami/.npm/ab465912-glob-3-1-21.lock
+777 silly lockFile c01d0ea5-optimist-0-3 optimist@~0.3
+778 silly lockFile c01d0ea5-optimist-0-3 optimist@~0.3
+779 http 304 https://registry.npmjs.org/uglify-js
+780 silly registry.get cb [ 304,
+780 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+780 silly registry.get     server: 'Apache',
+780 silly registry.get     via: '1.1 varnish',
+780 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:43 GMT',
+780 silly registry.get     'cache-control': 'max-age=60',
+780 silly registry.get     etag: '"13XX7PVSGQ2DX6QO4HNNX3QNV"',
+780 silly registry.get     age: '21',
+780 silly registry.get     'x-served-by': 'cache-lcy1122-LCY',
+780 silly registry.get     'x-cache': 'HIT',
+780 silly registry.get     'x-cache-hits': '2',
+780 silly registry.get     'x-timer': 'S1414935472.309547,VS0,VE0',
+780 silly registry.get     vary: 'Accept',
+780 silly registry.get     'content-length': '0',
+780 silly registry.get     'keep-alive': 'timeout=10, max=50',
+780 silly registry.get     connection: 'Keep-Alive' } ]
+781 verbose etag https://registry.npmjs.org/uglify-js from cache
+782 http 200 https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+783 silly addNameRange number 2 { name: 'mime', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+784 silly addNameRange versions [ 'mime',
+784 silly addNameRange   [ '1.0.0',
+784 silly addNameRange     '1.1.0',
+784 silly addNameRange     '1.2.1',
+784 silly addNameRange     '1.2.2',
+784 silly addNameRange     '1.2.3',
+784 silly addNameRange     '1.2.4',
+784 silly addNameRange     '1.2.5',
+784 silly addNameRange     '1.2.6',
+784 silly addNameRange     '1.2.7',
+784 silly addNameRange     '1.2.8',
+784 silly addNameRange     '1.2.9',
+784 silly addNameRange     '1.2.10',
+784 silly addNameRange     '1.2.11' ] ]
+785 verbose addNamed [ 'mime', '1.2.11' ]
+786 verbose addNamed [ '1.2.11', '1.2.11' ]
+787 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+788 verbose lock mime@1.2.11 /home/bitnami/.npm/c4b0741f-mime-1-2-11.lock
+789 info retry fetch attempt 1 at 13:37:52
+790 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/connect/-/connect-2.2.2.tgz
+791 silly addNameRange number 2 { name: 'async', range: '>=0.1.0-0 <0.2.0-0', hasData: true }
+792 silly addNameRange versions [ 'async',
+792 silly addNameRange   [ '0.1.0',
+792 silly addNameRange     '0.1.1',
+792 silly addNameRange     '0.1.2',
+792 silly addNameRange     '0.1.3',
+792 silly addNameRange     '0.1.4',
+792 silly addNameRange     '0.1.5',
+792 silly addNameRange     '0.1.6',
+792 silly addNameRange     '0.1.7',
+792 silly addNameRange     '0.1.8',
+792 silly addNameRange     '0.1.9',
+792 silly addNameRange     '0.1.10',
+792 silly addNameRange     '0.1.11',
+792 silly addNameRange     '0.1.12',
+792 silly addNameRange     '0.1.13',
+792 silly addNameRange     '0.1.14',
+792 silly addNameRange     '0.1.15',
+792 silly addNameRange     '0.1.16',
+792 silly addNameRange     '0.1.17',
+792 silly addNameRange     '0.1.18',
+792 silly addNameRange     '0.1.19',
+792 silly addNameRange     '0.1.20',
+792 silly addNameRange     '0.1.21',
+792 silly addNameRange     '0.1.22',
+792 silly addNameRange     '0.2.0',
+792 silly addNameRange     '0.2.1',
+792 silly addNameRange     '0.2.2',
+792 silly addNameRange     '0.2.3',
+792 silly addNameRange     '0.2.4',
+792 silly addNameRange     '0.2.5',
+792 silly addNameRange     '0.2.6',
+792 silly addNameRange     '0.2.7',
+792 silly addNameRange     '0.2.8',
+792 silly addNameRange     '0.2.9',
+792 silly addNameRange     '0.2.10',
+792 silly addNameRange     '0.3.0',
+792 silly addNameRange     '0.4.0',
+792 silly addNameRange     '0.4.1',
+792 silly addNameRange     '0.5.0',
+792 silly addNameRange     '0.6.0',
+792 silly addNameRange     '0.6.1',
+792 silly addNameRange     '0.6.2',
+792 silly addNameRange     '0.7.0',
+792 silly addNameRange     '0.8.0',
+792 silly addNameRange     '0.9.0' ] ]
+793 verbose addNamed [ 'async', '0.1.22' ]
+794 verbose addNamed [ '0.1.22', '0.1.22' ]
+795 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+796 verbose lock async@0.1.22 /home/bitnami/.npm/09d21715-async-0-1-22.lock
+797 http 304 https://registry.npmjs.org/commander
+798 silly registry.get cb [ 304,
+798 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+798 silly registry.get     server: 'Apache',
+798 silly registry.get     via: '1.1 varnish',
+798 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+798 silly registry.get     'cache-control': 'max-age=60',
+798 silly registry.get     etag: '"5LA0A6333SD0W0TSTEA8392S5"',
+798 silly registry.get     age: '30',
+798 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+798 silly registry.get     'x-cache': 'HIT',
+798 silly registry.get     'x-cache-hits': '1',
+798 silly registry.get     'x-timer': 'S1414935472.318915,VS0,VE0',
+798 silly registry.get     vary: 'Accept',
+798 silly registry.get     'content-length': '0',
+798 silly registry.get     'keep-alive': 'timeout=10, max=50',
+798 silly registry.get     connection: 'Keep-Alive' } ]
+799 verbose etag https://registry.npmjs.org/commander from cache
+800 http GET https://registry.npmjs.org/connect/-/connect-2.2.2.tgz
+801 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+802 verbose lock https://registry.npmjs.org/async/-/async-0.1.22.tgz /home/bitnami/.npm/d8129da7-npmjs-org-async-async-0-1-22-tgz.lock
+803 http 200 https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+804 http 304 https://registry.npmjs.org/coffee-script
+805 silly registry.get cb [ 304,
+805 silly registry.get   { date: 'Sun, 02 Nov 2014 13:37:52 GMT',
+805 silly registry.get     server: 'Apache',
+805 silly registry.get     via: '1.1 varnish',
+805 silly registry.get     'last-modified': 'Sun, 02 Nov 2014 13:37:52 GMT',
+805 silly registry.get     'cache-control': 'max-age=60',
+805 silly registry.get     etag: '"CQS5CH60OCCSAVZFPZFY9BRZK"',
+805 silly registry.get     age: '13',
+805 silly registry.get     'x-served-by': 'cache-lcy1134-LCY',
+805 silly registry.get     'x-cache': 'HIT',
+805 silly registry.get     'x-cache-hits': '1',
+805 silly registry.get     'x-timer': 'S1414935472.329333,VS0,VE0',
+805 silly registry.get     vary: 'Accept',
+805 silly registry.get     'content-length': '0',
+805 silly registry.get     'keep-alive': 'timeout=10, max=50',
+805 silly registry.get     connection: 'Keep-Alive' } ]
+806 verbose etag https://registry.npmjs.org/coffee-script from cache
+807 silly addNameRange number 2 { name: 'uglify-js', range: '>=1.2.0-0 <1.3.0-0', hasData: true }
+808 silly addNameRange versions [ 'uglify-js',
+808 silly addNameRange   [ '0.0.1',
+808 silly addNameRange     '0.0.2',
+808 silly addNameRange     '0.0.3',
+808 silly addNameRange     '0.0.4',
+808 silly addNameRange     '0.0.5',
+808 silly addNameRange     '1.0.1',
+808 silly addNameRange     '1.0.2',
+808 silly addNameRange     '1.0.3',
+808 silly addNameRange     '1.0.4',
+808 silly addNameRange     '1.0.5',
+808 silly addNameRange     '1.0.6',
+808 silly addNameRange     '1.0.7',
+808 silly addNameRange     '1.1.0',
+808 silly addNameRange     '1.1.1',
+808 silly addNameRange     '1.2.0',
+808 silly addNameRange     '1.2.1',
+808 silly addNameRange     '1.2.2',
+808 silly addNameRange     '1.2.3',
+808 silly addNameRange     '1.2.4',
+808 silly addNameRange     '1.2.5',
+808 silly addNameRange     '1.2.6',
+808 silly addNameRange     '1.3.0',
+808 silly addNameRange     '1.3.1',
+808 silly addNameRange     '1.3.2',
+808 silly addNameRange     '1.3.3',
+808 silly addNameRange     '1.3.4',
+808 silly addNameRange     '2.2.0',
+808 silly addNameRange     '2.2.1',
+808 silly addNameRange     '2.2.2',
+808 silly addNameRange     '2.2.3',
+808 silly addNameRange     '2.2.4',
+808 silly addNameRange     '2.2.5',
+808 silly addNameRange     '2.3.0',
+808 silly addNameRange     '2.3.1',
+808 silly addNameRange     '2.3.2',
+808 silly addNameRange     '2.3.3',
+808 silly addNameRange     '2.3.4',
+808 silly addNameRange     '2.3.5',
+808 silly addNameRange     '2.3.6',
+808 silly addNameRange     '1.3.5',
+808 silly addNameRange     '2.4.0',
+808 silly addNameRange     '2.4.1',
+808 silly addNameRange     '2.4.2',
+808 silly addNameRange     '2.4.3',
+808 silly addNameRange     '2.4.4',
+808 silly addNameRange     '2.4.5',
+808 silly addNameRange     '2.4.6',
+808 silly addNameRange     '2.4.7',
+808 silly addNameRange     '2.4.8',
+808 silly addNameRange     '2.4.9',
+808 silly addNameRange     '2.4.10',
+808 silly addNameRange     '2.4.11',
+808 silly addNameRange     '2.4.12',
+808 silly addNameRange     '2.4.13',
+808 silly addNameRange     '2.4.14',
+808 silly addNameRange     '2.4.15' ] ]
+809 verbose addNamed [ 'uglify-js', '1.2.6' ]
+810 verbose addNamed [ '1.2.6', '1.2.6' ]
+811 silly lockFile a9fc4ad0-uglify-js-1-2-6 uglify-js@1.2.6
+812 verbose lock uglify-js@1.2.6 /home/bitnami/.npm/a9fc4ad0-uglify-js-1-2-6.lock
+813 verbose addRemoteTarball [ 'https://registry.npmjs.org/async/-/async-0.1.22.tgz',
+813 verbose addRemoteTarball   '0fc1aaa088a0e3ef0ebe2d8831bab0dcf8845061' ]
+814 http 200 https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+815 silly lockFile 3d5b492f-rg-uglify-js-uglify-js-1-2-6-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+816 verbose lock https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz /home/bitnami/.npm/3d5b492f-rg-uglify-js-uglify-js-1-2-6-tgz.lock
+817 silly addNameRange number 2 { name: 'commander', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+818 silly addNameRange versions [ 'commander',
+818 silly addNameRange   [ '0.0.1',
+818 silly addNameRange     '0.0.3',
+818 silly addNameRange     '0.0.4',
+818 silly addNameRange     '0.0.5',
+818 silly addNameRange     '0.1.0',
+818 silly addNameRange     '0.2.0',
+818 silly addNameRange     '0.2.1',
+818 silly addNameRange     '0.3.0',
+818 silly addNameRange     '0.3.1',
+818 silly addNameRange     '0.3.2',
+818 silly addNameRange     '0.3.3',
+818 silly addNameRange     '0.4.0',
+818 silly addNameRange     '0.4.1',
+818 silly addNameRange     '0.4.2',
+818 silly addNameRange     '0.4.3',
+818 silly addNameRange     '0.5.0',
+818 silly addNameRange     '0.5.1',
+818 silly addNameRange     '0.6.0',
+818 silly addNameRange     '0.6.1',
+818 silly addNameRange     '0.5.2',
+818 silly addNameRange     '1.0.0',
+818 silly addNameRange     '1.0.1',
+818 silly addNameRange     '1.0.2',
+818 silly addNameRange     '1.0.3',
+818 silly addNameRange     '1.0.4',
+818 silly addNameRange     '1.0.5',
+818 silly addNameRange     '1.1.0',
+818 silly addNameRange     '1.1.1',
+818 silly addNameRange     '1.2.0',
+818 silly addNameRange     '1.3.0',
+818 silly addNameRange     '1.3.1',
+818 silly addNameRange     '1.3.2',
+818 silly addNameRange     '2.0.0',
+818 silly addNameRange     '2.1.0',
+818 silly addNameRange     '2.2.0',
+818 silly addNameRange     '2.3.0',
+818 silly addNameRange     '2.4.0',
+818 silly addNameRange     '2.5.0' ] ]
+819 verbose addNamed [ 'commander', '0.5.2' ]
+820 verbose addNamed [ '0.5.2', '0.5.2' ]
+821 silly lockFile 3b2c849f-commander-0-5-2 commander@0.5.2
+822 verbose lock commander@0.5.2 /home/bitnami/.npm/3b2c849f-commander-0-5-2.lock
+823 silly lockFile ab465912-glob-3-1-21 glob@3.1.21
+824 silly lockFile ab465912-glob-3-1-21 glob@3.1.21
+825 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+826 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+827 info retry fetch attempt 1 at 13:37:52
+828 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/async/-/async-0.1.22.tgz
+829 silly lockFile 16f79fce-glob-3-1 glob@~3.1
+830 silly lockFile 16f79fce-glob-3-1 glob@~3.1
+831 silly lockFile f7091508-mime-1-2 mime@~1.2
+832 silly lockFile f7091508-mime-1-2 mime@~1.2
+833 verbose addRemoteTarball [ 'https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz',
+833 verbose addRemoteTarball   'd354b2d3c1cf10ebc18fa78c11a28bdd9ce1580d' ]
+834 http GET https://registry.npmjs.org/async/-/async-0.1.22.tgz
+835 silly addNameRange number 2 { name: 'coffee-script',
+835 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+835 silly addNameRange   hasData: true }
+836 silly addNameRange versions [ 'coffee-script',
+836 silly addNameRange   [ '0.7.0',
+836 silly addNameRange     '0.7.1',
+836 silly addNameRange     '0.7.2',
+836 silly addNameRange     '0.9.0',
+836 silly addNameRange     '0.9.1',
+836 silly addNameRange     '0.9.2',
+836 silly addNameRange     '0.9.3',
+836 silly addNameRange     '0.9.4',
+836 silly addNameRange     '0.9.5',
+836 silly addNameRange     '0.9.6',
+836 silly addNameRange     '1.0.0',
+836 silly addNameRange     '1.0.1',
+836 silly addNameRange     '1.1.0',
+836 silly addNameRange     '1.1.1',
+836 silly addNameRange     '1.1.2',
+836 silly addNameRange     '1.1.3',
+836 silly addNameRange     '1.2.0',
+836 silly addNameRange     '1.3.0',
+836 silly addNameRange     '1.3.1',
+836 silly addNameRange     '1.3.2',
+836 silly addNameRange     '1.3.3',
+836 silly addNameRange     '1.4.0',
+836 silly addNameRange     '1.5.0',
+836 silly addNameRange     '1.6.0',
+836 silly addNameRange     '1.6.1',
+836 silly addNameRange     '1.6.2',
+836 silly addNameRange     '1.6.3',
+836 silly addNameRange     '1.7.0',
+836 silly addNameRange     '1.7.1',
+836 silly addNameRange     '1.8.0' ] ]
+837 verbose addNamed [ 'coffee-script', '1.3.3' ]
+838 verbose addNamed [ '1.3.3', '1.3.3' ]
+839 silly lockFile 022c8436-coffee-script-1-3-3 coffee-script@1.3.3
+840 verbose lock coffee-script@1.3.3 /home/bitnami/.npm/022c8436-coffee-script-1-3-3.lock
+841 silly lockFile 29a026b1-rg-commander-commander-0-5-2-tgz https://registry.npmjs.org/commander/-/commander-0.5.2.tgz
+842 verbose lock https://registry.npmjs.org/commander/-/commander-0.5.2.tgz /home/bitnami/.npm/29a026b1-rg-commander-commander-0-5-2-tgz.lock
+843 info retry fetch attempt 1 at 13:37:52
+844 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+845 verbose addRemoteTarball [ 'https://registry.npmjs.org/commander/-/commander-0.5.2.tgz',
+845 verbose addRemoteTarball   'f270326709a115a126cfed5623852439b8e4a3b5' ]
+846 http GET https://registry.npmjs.org/uglify-js/-/uglify-js-1.2.6.tgz
+847 silly lockFile 1b193f6e-e-script-coffee-script-1-3-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+848 verbose lock https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz /home/bitnami/.npm/1b193f6e-e-script-coffee-script-1-3-3-tgz.lock
+849 verbose addRemoteTarball [ 'https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz',
+849 verbose addRemoteTarball   '150d6b4cb522894369efed6a2101c20bc7f4a4f4' ]
+850 info retry fetch attempt 1 at 13:37:52
+851 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/commander/-/commander-0.5.2.tgz
+852 http GET https://registry.npmjs.org/commander/-/commander-0.5.2.tgz
+853 info retry fetch attempt 1 at 13:37:52
+854 verbose fetch to= /tmp/npm-2388-3AnUXTh-/registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+855 http GET https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+856 silly lockFile 97e0bca7-npmjs-org-jsdom-jsdom-0-2-19-tgz https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+857 silly lockFile 97e0bca7-npmjs-org-jsdom-jsdom-0-2-19-tgz https://registry.npmjs.org/jsdom/-/jsdom-0.2.19.tgz
+858 silly lockFile 37e839c1-jsdom-0-2-19 jsdom@0.2.19
+859 silly lockFile 37e839c1-jsdom-0-2-19 jsdom@0.2.19
+860 silly lockFile dfb30512-jsdom-0-2-14 jsdom@~0.2.14
+861 silly lockFile dfb30512-jsdom-0-2-14 jsdom@~0.2.14
+862 silly lockFile 0b408832-rg-uglify-js-uglify-js-2-3-6-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+863 silly lockFile 0b408832-rg-uglify-js-uglify-js-2-3-6-tgz https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz
+864 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+865 silly lockFile a40be02f-uglify-js-2-3-6 uglify-js@2.3.6
+866 silly lockFile fb0c1b8a-uglify-js-2-3 uglify-js@~2.3
+867 silly lockFile fb0c1b8a-uglify-js-2-3 uglify-js@~2.3
+868 silly resolved [ { name: 'optimist',
+868 silly resolved     version: '0.3.7',
+868 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+868 silly resolved     main: './index.js',
+868 silly resolved     dependencies: { wordwrap: '~0.0.2' },
+868 silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+868 silly resolved     scripts: { test: 'tap ./test/*.js' },
+868 silly resolved     repository:
+868 silly resolved      { type: 'git',
+868 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+868 silly resolved     keywords:
+868 silly resolved      [ 'argument',
+868 silly resolved        'args',
+868 silly resolved        'option',
+868 silly resolved        'parser',
+868 silly resolved        'parsing',
+868 silly resolved        'cli',
+868 silly resolved        'command' ],
+868 silly resolved     author:
+868 silly resolved      { name: 'James Halliday',
+868 silly resolved        email: 'mail@substack.net',
+868 silly resolved        url: 'http://substack.net' },
+868 silly resolved     license: 'MIT/X11',
+868 silly resolved     engine: { node: '>=0.4' },
+868 silly resolved     _id: 'optimist@0.3.7',
+868 silly resolved     dist:
+868 silly resolved      { shasum: 'c90941ad59e4273328923074d2cf2e7cbc6ec0d9',
+868 silly resolved        tarball: 'http://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz' },
+868 silly resolved     _from: 'optimist@~0.3',
+868 silly resolved     _npmVersion: '1.2.2',
+868 silly resolved     _npmUser: { name: 'substack', email: 'mail@substack.net' },
+868 silly resolved     maintainers: [ [Object] ],
+868 silly resolved     directories: {},
+868 silly resolved     _shasum: 'c90941ad59e4273328923074d2cf2e7cbc6ec0d9',
+868 silly resolved     _resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.3.7.tgz',
+868 silly resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+868 silly resolved     readme: 'ERROR: No README data found!',
+868 silly resolved     homepage: 'https://github.com/substack/node-optimist' },
+868 silly resolved   { name: 'uglify-js',
+868 silly resolved     description: 'JavaScript parser, mangler/compressor and beautifier toolkit',
+868 silly resolved     homepage: 'http://lisperator.net/uglifyjs',
+868 silly resolved     main: 'tools/node.js',
+868 silly resolved     version: '2.3.6',
+868 silly resolved     engines: { node: '>=0.4.0' },
+868 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+868 silly resolved     repository: { type: 'git', url: 'https://github.com/mishoo/UglifyJS2.git' },
+868 silly resolved     dependencies: { async: '~0.2.6', 'source-map': '~0.1.7', optimist: '~0.3.5' },
+868 silly resolved     bin: { uglifyjs: 'bin/uglifyjs' },
+868 silly resolved     scripts: { test: 'node test/run-tests.js' },
+868 silly resolved     _id: 'uglify-js@2.3.6',
+868 silly resolved     dist:
+868 silly resolved      { shasum: 'fa0984770b428b7a9b2a8058f46355d14fef211a',
+868 silly resolved        tarball: 'http://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz' },
+868 silly resolved     _from: 'uglify-js@~2.3',
+868 silly resolved     _npmVersion: '1.2.18',
+868 silly resolved     _npmUser: { name: 'mishoo', email: 'mihai.bazon@gmail.com' },
+868 silly resolved     directories: {},
+868 silly resolved     _shasum: 'fa0984770b428b7a9b2a8058f46355d14fef211a',
+868 silly resolved     _resolved: 'https://registry.npmjs.org/uglify-js/-/uglify-js-2.3.6.tgz' } ]
+869 info install optimist@0.3.7 into /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars
+870 info install uglify-js@2.3.6 into /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars
+871 info installOne optimist@0.3.7
+872 info installOne uglify-js@2.3.6
+873 verbose node_modules/ember/node_modules/handlebars/node_modules/optimist unbuild
+874 http 200 https://registry.npmjs.org/connect/-/connect-2.2.2.tgz
+875 verbose tar unpack /home/bitnami/.npm/optimist/0.3.7/package.tgz
+876 silly lockFile cb169c32-handlebars-node-modules-optimist tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/optimist
+877 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/optimist /home/bitnami/.npm/cb169c32-handlebars-node-modules-optimist.lock
+878 silly lockFile 739e4e67-i-npm-optimist-0-3-7-package-tgz tar:///home/bitnami/.npm/optimist/0.3.7/package.tgz
+879 verbose lock tar:///home/bitnami/.npm/optimist/0.3.7/package.tgz /home/bitnami/.npm/739e4e67-i-npm-optimist-0-3-7-package-tgz.lock
+880 verbose node_modules/ember/node_modules/handlebars/node_modules/uglify-js unbuild
+881 silly gunzTarPerm modes [ '755', '644' ]
+882 verbose tar unpack /home/bitnami/.npm/uglify-js/2.3.6/package.tgz
+883 silly lockFile a84046e6-andlebars-node-modules-uglify-js tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/uglify-js
+884 verbose lock tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/uglify-js /home/bitnami/.npm/a84046e6-andlebars-node-modules-uglify-js.lock
+885 silly lockFile c8f718e7--npm-uglify-js-2-3-6-package-tgz tar:///home/bitnami/.npm/uglify-js/2.3.6/package.tgz
+886 verbose lock tar:///home/bitnami/.npm/uglify-js/2.3.6/package.tgz /home/bitnami/.npm/c8f718e7--npm-uglify-js-2-3-6-package-tgz.lock
+887 silly gunzTarPerm modes [ '755', '644' ]
+888 silly gunzTarPerm extractEntry package.json
+889 silly gunzTarPerm extractEntry LICENSE
+890 silly gunzTarPerm extractEntry index.js
+891 silly gunzTarPerm extractEntry package.json
+892 silly gunzTarPerm extractEntry .npmignore
+893 silly gunzTarPerm extractEntry README.md
+894 silly gunzTarPerm extractEntry example/line_count_options.js
+895 silly gunzTarPerm extractEntry LICENSE
+896 silly gunzTarPerm extractEntry example/boolean_double.js
+897 silly gunzTarPerm extractEntry example/divide.js
+898 silly gunzTarPerm extractEntry .travis.yml
+899 silly gunzTarPerm extractEntry bin/uglifyjs
+900 silly gunzTarPerm extractEntry example/nonopt.js
+901 silly gunzTarPerm extractEntry example/string.js
+902 silly gunzTarPerm extractEntry example/default_hash.js
+903 silly gunzTarPerm extractEntry example/reflect.js
+904 silly gunzTarPerm extractEntry example/default_singles.js
+905 silly gunzTarPerm extractEntry example/usage-options.js
+906 silly gunzTarPerm extractEntry lib/ast.js
+907 silly gunzTarPerm extractEntry lib/compress.js
+908 http 200 https://registry.npmjs.org/async/-/async-0.1.22.tgz
+909 silly gunzTarPerm extractEntry example/bool.js
+910 silly gunzTarPerm extractEntry example/short.js
+911 silly gunzTarPerm extractEntry lib/mozilla-ast.js
+912 silly gunzTarPerm extractEntry lib/output.js
+913 silly gunzTarPerm extractEntry example/xup.js
+914 silly gunzTarPerm extractEntry example/boolean_single.js
+915 silly lockFile ad3c167b-js-org-connect-connect-2-2-2-tgz https://registry.npmjs.org/connect/-/connect-2.2.2.tgz
+916 silly lockFile ad3c167b-js-org-connect-connect-2-2-2-tgz https://registry.npmjs.org/connect/-/connect-2.2.2.tgz
+917 silly lockFile fa3f39c5-connect-2-2-2 connect@2.2.2
+918 silly lockFile fa3f39c5-connect-2-2-2 connect@2.2.2
+919 silly lockFile 71b9c0a9-connect-2-2 connect@~2.2
+920 silly lockFile 71b9c0a9-connect-2-2 connect@~2.2
+921 verbose about to build /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/convoy
+922 verbose node_modules/ember/node_modules/convoy unbuild
+923 info preuninstall convoy@0.3.2
+924 silly gunzTarPerm extractEntry lib/parse.js
+925 silly gunzTarPerm extractEntry lib/scope.js
+926 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+927 silly lockFile d8129da7-npmjs-org-async-async-0-1-22-tgz https://registry.npmjs.org/async/-/async-0.1.22.tgz
+928 info uninstall convoy@0.3.2
+929 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+930 silly lockFile 09d21715-async-0-1-22 async@0.1.22
+931 http 200 https://registry.npmjs.org/commander/-/commander-0.5.2.tgz
+932 http 200 https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+933 silly gunzTarPerm extractEntry example/line_count_wrap.js
+934 silly gunzTarPerm extractEntry example/line_count.js
+935 silly lockFile 463e1c03-async-0-1-x async@0.1.x
+936 silly lockFile 463e1c03-async-0-1-x async@0.1.x
+937 verbose false,/home/bitnami/chartjs_dashboard/node_modules,/home/bitnami/chartjs_dashboard/node_modules/ember/node_modules unbuild convoy@0.3.2
+938 verbose /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/.bin,[object Object] binRoot
+939 info postuninstall convoy@0.3.2
+940 silly lockFile fb78c9e1--htmlparser-htmlparser-1-7-6-tgz https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+941 silly lockFile fb78c9e1--htmlparser-htmlparser-1-7-6-tgz https://registry.npmjs.org/htmlparser/-/htmlparser-1.7.6.tgz
+942 silly lockFile 1f8880a7-htmlparser-1-7-6 htmlparser@1.7.6
+943 silly lockFile 1f8880a7-htmlparser-1-7-6 htmlparser@1.7.6
+944 silly gunzTarPerm extractEntry readme.markdown
+945 silly gunzTarPerm extractEntry test/parse.js
+946 silly lockFile 29a026b1-rg-commander-commander-0-5-2-tgz https://registry.npmjs.org/commander/-/commander-0.5.2.tgz
+947 silly lockFile 29a026b1-rg-commander-commander-0-5-2-tgz https://registry.npmjs.org/commander/-/commander-0.5.2.tgz
+948 silly gunzTarPerm extractEntry test/_.js
+949 silly gunzTarPerm extractEntry test/usage.js
+950 silly lockFile 3b2c849f-commander-0-5-2 commander@0.5.2
+951 silly lockFile 3b2c849f-commander-0-5-2 commander@0.5.2
+952 silly lockFile 7444f370-commander-0-5 commander@~0.5
+953 silly lockFile 7444f370-commander-0-5 commander@~0.5
+954 silly gunzTarPerm extractEntry test/_/bin.js
+955 silly gunzTarPerm extractEntry test/_/argv.js
+956 verbose about to build /home/bitnami/chartjs_dashboard/node_modules/ember
+957 verbose node_modules/ember unbuild
+958 info preuninstall ember@1.0.0-pre.2
+959 info uninstall ember@1.0.0-pre.2
+960 verbose true,/home/bitnami/chartjs_dashboard/node_modules,/home/bitnami/chartjs_dashboard/node_modules unbuild ember@1.0.0-pre.2
+961 info postuninstall ember@1.0.0-pre.2
+962 silly gunzTarPerm extractEntry lib/sourcemap.js
+963 silly gunzTarPerm extractEntry .travis.yml
+964 silly lockFile 9b0b0b6f-odules-ember-node-modules-jquery tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/jquery
+965 silly lockFile 9b0b0b6f-odules-ember-node-modules-jquery tar:///home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/jquery
+966 silly lockFile 42c7b084-ami-npm-jquery-1-7-3-package-tgz tar:///home/bitnami/.npm/jquery/1.7.3/package.tgz
+967 silly lockFile 42c7b084-ami-npm-jquery-1-7-3-package-tgz tar:///home/bitnami/.npm/jquery/1.7.3/package.tgz
+968 info preinstall jquery@1.7.3
+969 silly lockFile 1b193f6e-e-script-coffee-script-1-3-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+970 silly lockFile 1b193f6e-e-script-coffee-script-1-3-3-tgz https://registry.npmjs.org/coffee-script/-/coffee-script-1.3.3.tgz
+971 verbose readDependencies using package.json deps
+972 silly lockFile 022c8436-coffee-script-1-3-3 coffee-script@1.3.3
+973 silly lockFile 022c8436-coffee-script-1-3-3 coffee-script@1.3.3
+974 verbose readDependencies using package.json deps
+975 silly lockFile 0daa0647-coffee-script-1-3 coffee-script@~1.3
+976 silly lockFile 0daa0647-coffee-script-1-3 coffee-script@~1.3
+977 verbose cache add [ 'location@0.0.1', null ]
+978 verbose cache add name=undefined spec="location@0.0.1" args=["location@0.0.1",null]
+979 verbose parsed url { protocol: null,
+979 verbose parsed url   slashes: null,
+979 verbose parsed url   auth: null,
+979 verbose parsed url   host: null,
+979 verbose parsed url   port: null,
+979 verbose parsed url   hostname: null,
+979 verbose parsed url   hash: null,
+979 verbose parsed url   search: null,
+979 verbose parsed url   query: null,
+979 verbose parsed url   pathname: 'location@0.0.1',
+979 verbose parsed url   path: 'location@0.0.1',
+979 verbose parsed url   href: 'location@0.0.1' }
+980 verbose cache add name="location" spec="0.0.1" args=["location","0.0.1"]
+981 verbose parsed url { protocol: null,
+981 verbose parsed url   slashes: null,
+981 verbose parsed url   auth: null,
+981 verbose parsed url   host: null,
+981 verbose parsed url   port: null,
+981 verbose parsed url   hostname: null,
+981 verbose parsed url   hash: null,
+981 verbose parsed url   search: null,
+981 verbose parsed url   query: null,
+981 verbose parsed url   pathname: '0.0.1',
+981 verbose parsed url   path: '0.0.1',
+981 verbose parsed url   href: '0.0.1' }
+982 verbose addNamed [ 'location', '0.0.1' ]
+983 verbose addNamed [ '0.0.1', '0.0.1' ]
+984 silly lockFile dc2323ed-location-0-0-1 location@0.0.1
+985 verbose lock location@0.0.1 /home/bitnami/.npm/dc2323ed-location-0-0-1.lock
+986 verbose cache add [ 'navigator@~1.0.1', null ]
+987 verbose cache add name=undefined spec="navigator@~1.0.1" args=["navigator@~1.0.1",null]
+988 verbose parsed url { protocol: null,
+988 verbose parsed url   slashes: null,
+988 verbose parsed url   auth: null,
+988 verbose parsed url   host: null,
+988 verbose parsed url   port: null,
+988 verbose parsed url   hostname: null,
+988 verbose parsed url   hash: null,
+988 verbose parsed url   search: null,
+988 verbose parsed url   query: null,
+988 verbose parsed url   pathname: 'navigator@~1.0.1',
+988 verbose parsed url   path: 'navigator@~1.0.1',
+988 verbose parsed url   href: 'navigator@~1.0.1' }
+989 verbose cache add name="navigator" spec="~1.0.1" args=["navigator","~1.0.1"]
+990 verbose parsed url { protocol: null,
+990 verbose parsed url   slashes: null,
+990 verbose parsed url   auth: null,
+990 verbose parsed url   host: null,
+990 verbose parsed url   port: null,
+990 verbose parsed url   hostname: null,
+990 verbose parsed url   hash: null,
+990 verbose parsed url   search: null,
+990 verbose parsed url   query: null,
+990 verbose parsed url   pathname: '~1.0.1',
+990 verbose parsed url   path: '~1.0.1',
+990 verbose parsed url   href: '~1.0.1' }
+991 verbose addNamed [ 'navigator', '~1.0.1' ]
+992 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+993 silly lockFile 74cc156a-navigator-1-0-1 navigator@~1.0.1
+994 verbose lock navigator@~1.0.1 /home/bitnami/.npm/74cc156a-navigator-1-0-1.lock
+995 verbose cache add [ 'jsdom@~0.2.14', null ]
+996 verbose cache add name=undefined spec="jsdom@~0.2.14" args=["jsdom@~0.2.14",null]
+997 verbose parsed url { protocol: null,
+997 verbose parsed url   slashes: null,
+997 verbose parsed url   auth: null,
+997 verbose parsed url   host: null,
+997 verbose parsed url   port: null,
+997 verbose parsed url   hostname: null,
+997 verbose parsed url   hash: null,
+997 verbose parsed url   search: null,
+997 verbose parsed url   query: null,
+997 verbose parsed url   pathname: 'jsdom@~0.2.14',
+997 verbose parsed url   path: 'jsdom@~0.2.14',
+997 verbose parsed url   href: 'jsdom@~0.2.14' }
+998 verbose request where is /location
+999 verbose request registry https://registry.npmjs.org/
+1000 verbose url raw /location
+1001 verbose url resolving [ 'https://registry.npmjs.org/', './location' ]
+1002 verbose url resolved https://registry.npmjs.org/location
+1003 verbose request where is https://registry.npmjs.org/location
+1004 info trying registry request attempt 1 at 13:37:52
+1005 http GET https://registry.npmjs.org/location
+1006 silly addNameRange { name: 'navigator',
+1006 silly addNameRange   range: '>=1.0.1-0 <1.1.0-0',
+1006 silly addNameRange   hasData: false }
+1007 verbose cache add name="jsdom" spec="~0.2.14" args=["jsdom","~0.2.14"]
+1008 verbose parsed url { protocol: null,
+1008 verbose parsed url   slashes: null,
+1008 verbose parsed url   auth: null,
+1008 verbose parsed url   host: null,
+1008 verbose parsed url   port: null,
+1008 verbose parsed url   hostname: null,
+1008 verbose parsed url   hash: null,
+1008 verbose parsed url   search: null,
+1008 verbose parsed url   query: null,
+1008 verbose parsed url   pathname: '~0.2.14',
+1008 verbose parsed url   path: '~0.2.14',
+1008 verbose parsed url   href: '~0.2.14' }
+1009 verbose addNamed [ 'jsdom', '~0.2.14' ]
+1010 verbose addNamed [ null, '>=0.2.14-0 <0.3.0-0' ]
+1011 silly lockFile dfb30512-jsdom-0-2-14 jsdom@~0.2.14
+1012 verbose lock jsdom@~0.2.14 /home/bitnami/.npm/dfb30512-jsdom-0-2-14.lock
+1013 verbose cache add [ 'htmlparser@1.7.6', null ]
+1014 verbose cache add name=undefined spec="htmlparser@1.7.6" args=["htmlparser@1.7.6",null]
+1015 verbose parsed url { protocol: null,
+1015 verbose parsed url   slashes: null,
+1015 verbose parsed url   auth: null,
+1015 verbose parsed url   host: null,
+1015 verbose parsed url   port: null,
+1015 verbose parsed url   hostname: null,
+1015 verbose parsed url   hash: null,
+1015 verbose parsed url   search: null,
+1015 verbose parsed url   query: null,
+1015 verbose parsed url   pathname: 'htmlparser@1.7.6',
+1015 verbose parsed url   path: 'htmlparser@1.7.6',
+1015 verbose parsed url   href: 'htmlparser@1.7.6' }
+1016 verbose cache add [ 'xmlhttprequest@~1.4.2', null ]
+1017 verbose cache add name=undefined spec="xmlhttprequest@~1.4.2" args=["xmlhttprequest@~1.4.2",null]
+1018 verbose parsed url { protocol: null,
+1018 verbose parsed url   slashes: null,
+1018 verbose parsed url   auth: null,
+1018 verbose parsed url   host: null,
+1018 verbose parsed url   port: null,
+1018 verbose parsed url   hostname: null,
+1018 verbose parsed url   hash: null,
+1018 verbose parsed url   search: null,
+1018 verbose parsed url   query: null,
+1018 verbose parsed url   pathname: 'xmlhttprequest@~1.4.2',
+1018 verbose parsed url   path: 'xmlhttprequest@~1.4.2',
+1018 verbose parsed url   href: 'xmlhttprequest@~1.4.2' }
+1019 verbose request where is /navigator
+1020 verbose request registry https://registry.npmjs.org/
+1021 verbose url raw /navigator
+1022 verbose url resolving [ 'https://registry.npmjs.org/', './navigator' ]
+1023 verbose url resolved https://registry.npmjs.org/navigator
+1024 verbose request where is https://registry.npmjs.org/navigator
+1025 info trying registry request attempt 1 at 13:37:52
+1026 http GET https://registry.npmjs.org/navigator
+1027 verbose cache add name="htmlparser" spec="1.7.6" args=["htmlparser","1.7.6"]
+1028 verbose parsed url { protocol: null,
+1028 verbose parsed url   slashes: null,
+1028 verbose parsed url   auth: null,
+1028 verbose parsed url   host: null,
+1028 verbose parsed url   port: null,
+1028 verbose parsed url   hostname: null,
+1028 verbose parsed url   hash: null,
+1028 verbose parsed url   search: null,
+1028 verbose parsed url   query: null,
+1028 verbose parsed url   pathname: '1.7.6',
+1028 verbose parsed url   path: '1.7.6',
+1028 verbose parsed url   href: '1.7.6' }
+1029 verbose addNamed [ 'htmlparser', '1.7.6' ]
+1030 verbose addNamed [ '1.7.6', '1.7.6' ]
+1031 silly lockFile 1f8880a7-htmlparser-1-7-6 htmlparser@1.7.6
+1032 verbose lock htmlparser@1.7.6 /home/bitnami/.npm/1f8880a7-htmlparser-1-7-6.lock
+1033 verbose cache add name="xmlhttprequest" spec="~1.4.2" args=["xmlhttprequest","~1.4.2"]
+1034 verbose parsed url { protocol: null,
+1034 verbose parsed url   slashes: null,
+1034 verbose parsed url   auth: null,
+1034 verbose parsed url   host: null,
+1034 verbose parsed url   port: null,
+1034 verbose parsed url   hostname: null,
+1034 verbose parsed url   hash: null,
+1034 verbose parsed url   search: null,
+1034 verbose parsed url   query: null,
+1034 verbose parsed url   pathname: '~1.4.2',
+1034 verbose parsed url   path: '~1.4.2',
+1034 verbose parsed url   href: '~1.4.2' }
+1035 verbose addNamed [ 'xmlhttprequest', '~1.4.2' ]
+1036 verbose addNamed [ null, '>=1.4.2-0 <1.5.0-0' ]
+1037 silly lockFile 5e92c166-xmlhttprequest-1-4-2 xmlhttprequest@~1.4.2
+1038 verbose lock xmlhttprequest@~1.4.2 /home/bitnami/.npm/5e92c166-xmlhttprequest-1-4-2.lock
+1039 silly addNameRange { name: 'jsdom', range: '>=0.2.14-0 <0.3.0-0', hasData: false }
+1040 error Error: ENOENT, lstat '/home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/optimist/example/xup.js'
+1041 error If you need help, you may report this *entire* log,
+1041 error including the npm and node versions, at:
+1041 error     <http://github.com/npm/npm/issues>
+1042 error System Linux 3.13.0-36-generic
+1043 error command "/opt/bitnami/nodejs/bin/.node.bin" "/opt/bitnami/nodejs/bin/npm" "install" "ember"
+1044 error cwd /home/bitnami/chartjs_dashboard
+1045 error node -v v0.10.31
+1046 error npm -v 1.4.21
+1047 error path /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/optimist/example/xup.js
+1048 error fstream_path /home/bitnami/chartjs_dashboard/node_modules/ember/node_modules/handlebars/node_modules/optimist/example/xup.js
+1049 error fstream_type File
+1050 error fstream_class FileWriter
+1051 error code ENOENT
+1052 error errno 34
+1053 error fstream_stack /opt/bitnami/nodejs/lib/node_modules/npm/node_modules/fstream/lib/writer.js:284:26
+1053 error fstream_stack Object.oncomplete (evalmachine.<anonymous>:107:15)
+1054 verbose exit [ 34, true ]
